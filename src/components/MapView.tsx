@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { Icon, LatLngBounds } from 'leaflet';
-import { MapPin, Navigation, Phone, Clock, Star } from 'lucide-react';
+import { MapPin, Navigation, Phone, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/hooks/use-toast';
@@ -11,12 +12,20 @@ import { isFavorite, addToFavorites, removeFromFavorites } from '@/utils/favorit
 import 'leaflet/dist/leaflet.css';
 
 // Fix para los iconos de Leaflet
-delete (Icon.Default.prototype as any)._getIconUrl;
+delete (Icon.Default.prototype as unknown as { _getIconUrl?: unknown })._getIconUrl;
 Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
   iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
+
+// Componente React para el icono SVG del marcador
+const MarkerIconSvg: React.FC<{ color: string }> = ({ color }) => (
+  <svg width="25" height="41" viewBox="0 0 25 41" xmlns="http://www.w3.org/2000/svg">
+    <path d={`M12.5 0C5.6 0 0 5.6 0 12.5c0 12.5 12.5 28.5 12.5 28.5s12.5-16 12.5-28.5C25 5.6 19.4 0 12.5 0z`} fill={color} />
+    <circle cx="12.5" cy="12.5" r="6" fill="white" />
+  </svg>
+);
 
 // Iconos personalizados para diferentes tipos de oficinas
 const createCustomIcon = (type: string, isSelected: boolean = false) => {
@@ -29,13 +38,9 @@ const createCustomIcon = (type: string, isSelected: boolean = false) => {
 
   const color = colors[type as keyof typeof colors] || '#6b7280';
   
+  const iconMarkup = renderToStaticMarkup(<MarkerIconSvg color={color} />);
   return new Icon({
-    iconUrl: `data:image/svg+xml;base64,${btoa(`
-      <svg width="25" height="41" viewBox="0 0 25 41" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.5 0C5.6 0 0 5.6 0 12.5c0 12.5 12.5 28.5 12.5 28.5s12.5-16 12.5-28.5C25 5.6 19.4 0 12.5 0z" fill="${color}"/>
-        <circle cx="12.5" cy="12.5" r="6" fill="white"/>
-      </svg>
-    `)}`,
+    iconUrl: `data:image/svg+xml;base64,${btoa(iconMarkup)}`,
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
@@ -183,30 +188,30 @@ export const MapView: React.FC<MapViewProps> = ({
     }
   };
 
-  const isOpen = (office: Office) => {
-    const now = new Date();
-    const currentDay = now.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
-    const currentTime = now.getHours() * 100 + now.getMinutes();
+  // const isOpen = (office: Office) => {
+  //   const now = new Date();
+  //   const currentDay = now.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
+  //   const currentTime = now.getHours() * 100 + now.getMinutes();
     
-    const dayMap: { [key: string]: keyof Office['hours'] } = {
-      'sunday': 'sunday',
-      'monday': 'monday',
-      'tuesday': 'tuesday',
-      'wednesday': 'wednesday',
-      'thursday': 'thursday',
-      'friday': 'friday',
-      'saturday': 'saturday'
-    };
+  //   const dayMap: { [key: string]: keyof Office['hours'] } = {
+  //     'sunday': 'sunday',
+  //     'monday': 'monday',
+  //     'tuesday': 'tuesday',
+  //     'wednesday': 'wednesday',
+  //     'thursday': 'thursday',
+  //     'friday': 'friday',
+  //     'saturday': 'saturday'
+  //   };
 
-    const todayHours = office.hours[dayMap[currentDay]];
-    if (todayHours === 'Cerrado') return false;
+  //   const todayHours = office.hours[dayMap[currentDay]];
+  //   if (todayHours === 'Cerrado') return false;
 
-    const [start, end] = todayHours.split(' - ');
-    const startTime = parseInt(start.replace(':', ''));
-    const endTime = parseInt(end.replace(':', ''));
+  //   const [start, end] = todayHours.split(' - ');
+  //   const startTime = parseInt(start.replace(':', ''));
+  //   const endTime = parseInt(end.replace(':', ''));
 
-    return currentTime >= startTime && currentTime <= endTime;
-  };
+  //   return currentTime >= startTime && currentTime <= endTime;
+  // };
 
   // Centro por defecto en Bolivia
   const defaultCenter: [number, number] = [-16.5000, -68.1193]; // La Paz
@@ -266,12 +271,12 @@ export const MapView: React.FC<MapViewProps> = ({
                       <Badge variant="outline" className="text-xs">
                         {getTypeLabel(office.type)}
                       </Badge>
-                      <Badge 
+                      {/* <Badge 
                         variant={isOpen(office) ? "default" : "secondary"}
                         className={`text-xs ${isOpen(office) ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}
                       >
                         {isOpen(office) ? "Abierto" : "Cerrado"}
-                      </Badge>
+                      </Badge> */}
                     </div>
                   </div>
                   <Button
@@ -305,12 +310,12 @@ export const MapView: React.FC<MapViewProps> = ({
                     </a>
                   </div>
 
-                  <div className="flex items-start space-x-2">
+                  {/* <div className="flex items-start space-x-2">
                     <Clock className="h-3 w-3 text-gray-500 mt-0.5 flex-shrink-0" />
                     <div className="text-xs text-gray-600">
                       <p>Hoy: {office.hours[Object.keys(office.hours)[new Date().getDay()]]}</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 {office.services.length > 0 && (

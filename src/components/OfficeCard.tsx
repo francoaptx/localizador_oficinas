@@ -124,30 +124,30 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({
     }
   };
 
-  const isOpen = () => {
-    const now = new Date();
-    const currentDay = now.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
-    const currentTime = now.getHours() * 100 + now.getMinutes();
+  // const isOpen = () => {
+  //   const now = new Date();
+  //   const currentDay = now.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
+  //   const currentTime = now.getHours() * 100 + now.getMinutes();
     
-    const dayMap: { [key: string]: keyof Office['hours'] } = {
-      'sunday': 'sunday',
-      'monday': 'monday',
-      'tuesday': 'tuesday',
-      'wednesday': 'wednesday',
-      'thursday': 'thursday',
-      'friday': 'friday',
-      'saturday': 'saturday'
-    };
+  //   const dayMap: { [key: string]: keyof Office['hours'] } = {
+  //     'sunday': 'sunday',
+  //     'monday': 'monday',
+  //     'tuesday': 'tuesday',
+  //     'wednesday': 'wednesday',
+  //     'thursday': 'thursday',
+  //     'friday': 'friday',
+  //     'saturday': 'saturday'
+  //   };
 
-    const todayHours = office.hours[dayMap[currentDay]];
-    if (todayHours === 'Cerrado') return false;
+  //   const todayHours = office.hours[dayMap[currentDay]];
+  //   if (todayHours === 'Cerrado') return false;
 
-    const [start, end] = todayHours.split(' - ');
-    const startTime = parseInt(start.replace(':', ''));
-    const endTime = parseInt(end.replace(':', ''));
+  //   const [start, end] = todayHours.split(' - ');
+  //   const startTime = parseInt(start.replace(':', ''));
+  //   const endTime = parseInt(end.replace(':', ''));
 
-    return currentTime >= startTime && currentTime <= endTime;
-  };
+  //   return currentTime >= startTime && currentTime <= endTime;
+  // };
 
   return (
     <Card className="w-full hover:shadow-lg transition-shadow duration-200">
@@ -166,12 +166,12 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({
                   {formatDistance(distance)}
                 </Badge>
               )}
-              <Badge 
+              {/* <Badge 
                 variant={isOpen() ? "default" : "secondary"}
                 className={isOpen() ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}
               >
                 {isOpen() ? "Abierto" : "Cerrado"}
-              </Badge>
+              </Badge> */}
             </div>
           </div>
           <Button
@@ -206,12 +206,12 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({
           </a>
         </div>
 
-        <div className="flex items-start space-x-2">
+        {/* <div className="flex items-start space-x-2">
           <Clock className="h-4 w-4 text-gray-500 mt-0.5 flex-shrink-0" />
           <div className="text-sm text-gray-600">
             <p>Hoy: {office.hours[Object.keys(office.hours)[new Date().getDay()]]}</p>
           </div>
-        </div>
+        </div> */}
 
         {office.services.length > 0 && (
           <div>

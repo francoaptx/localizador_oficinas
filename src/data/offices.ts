@@ -8,15 +8,15 @@ export interface Office {
   longitude: number;
   phone: string;
   email?: string;
-  hours: {
-    monday: string;
-    tuesday: string;
-    wednesday: string;
-    thursday: string;
-    friday: string;
-    saturday: string;
-    sunday: string;
-  };
+  // hours: {
+  //   monday: string;
+  //   tuesday: string;
+  //   wednesday: string;
+  //   thursday: string;
+  //   friday: string;
+  //   saturday: string;
+  //   sunday: string;
+  // };
   services: string[];
   type: 'sucursal' | 'agencia' | 'punto_atencion' | 'oficina_central';
   description?: string;
@@ -27,27 +27,18 @@ export const bolivianOffices: Office[] = [
   // La Paz
   {
     id: '1',
-    name: 'Oficina Central La Paz',
-    address: 'Av. Arce 2147, San Jorge',
-    city: 'La Paz',
-    department: 'La Paz',
-    latitude: -16.5000,
-    longitude: -68.1193,
-    phone: '+591 2 2441234',
-    email: 'lapaz.central@empresa.bo',
-    hours: {
-      monday: '08:30 - 18:00',
-      tuesday: '08:30 - 18:00',
-      wednesday: '08:30 - 18:00',
-      thursday: '08:30 - 18:00',
-      friday: '08:30 - 18:00',
-      saturday: '09:00 - 13:00',
-      sunday: 'Cerrado'
-    },
-    services: ['Atención al Cliente', 'Trámites Administrativos', 'Consultas', 'Pagos', 'Información General'],
-    type: 'oficina_central',
-    description: 'Oficina principal con todos los servicios disponibles'
+    name: 'Directorio',
+    address: 'Calle Aniceto Solarez Nº 64',
+    city: 'Sucre',
+    department: 'DAF',
+    latitude: -19.0376,
+    longitude: -65.2581,
+    phone: '64-45469',
+    services: [],
+    type: "sucursal",
+    description: 'Edificio Dirección Administrativa Y Financiera'
   },
+
   {
     id: '2',
     name: 'Sucursal Sopocachi',
@@ -57,15 +48,6 @@ export const bolivianOffices: Office[] = [
     latitude: -16.5069,
     longitude: -68.1310,
     phone: '+591 2 2442567',
-    hours: {
-      monday: '09:00 - 17:00',
-      tuesday: '09:00 - 17:00',
-      wednesday: '09:00 - 17:00',
-      thursday: '09:00 - 17:00',
-      friday: '09:00 - 17:00',
-      saturday: '09:00 - 12:00',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Consultas', 'Pagos'],
     type: 'sucursal'
   },
@@ -78,15 +60,6 @@ export const bolivianOffices: Office[] = [
     latitude: -16.5040,
     longitude: -68.1640,
     phone: '+591 2 2843456',
-    hours: {
-      monday: '08:00 - 16:00',
-      tuesday: '08:00 - 16:00',
-      wednesday: '08:00 - 16:00',
-      thursday: '08:00 - 16:00',
-      friday: '08:00 - 16:00',
-      saturday: '08:00 - 12:00',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Trámites Básicos', 'Pagos'],
     type: 'agencia'
   },
@@ -102,15 +75,6 @@ export const bolivianOffices: Office[] = [
     longitude: -63.1821,
     phone: '+591 3 3345678',
     email: 'santacruz@empresa.bo',
-    hours: {
-      monday: '08:00 - 18:00',
-      tuesday: '08:00 - 18:00',
-      wednesday: '08:00 - 18:00',
-      thursday: '08:00 - 18:00',
-      friday: '08:00 - 18:00',
-      saturday: '09:00 - 13:00',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Trámites Administrativos', 'Consultas', 'Pagos', 'Información General'],
     type: 'oficina_central',
     description: 'Oficina regional para el oriente boliviano'
@@ -124,15 +88,6 @@ export const bolivianOffices: Office[] = [
     latitude: -17.7539,
     longitude: -63.1656,
     phone: '+591 3 3567890',
-    hours: {
-      monday: '09:00 - 17:00',
-      tuesday: '09:00 - 17:00',
-      wednesday: '09:00 - 17:00',
-      thursday: '09:00 - 17:00',
-      friday: '09:00 - 17:00',
-      saturday: '09:00 - 12:00',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Consultas', 'Pagos'],
     type: 'sucursal'
   },
@@ -148,15 +103,6 @@ export const bolivianOffices: Office[] = [
     longitude: -66.1568,
     phone: '+591 4 4234567',
     email: 'cochabamba@empresa.bo',
-    hours: {
-      monday: '08:30 - 17:30',
-      tuesday: '08:30 - 17:30',
-      wednesday: '08:30 - 17:30',
-      thursday: '08:30 - 17:30',
-      friday: '08:30 - 17:30',
-      saturday: '09:00 - 12:00',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Trámites Administrativos', 'Consultas', 'Pagos'],
     type: 'oficina_central'
   },
@@ -169,15 +115,6 @@ export const bolivianOffices: Office[] = [
     latitude: -17.3922,
     longitude: -66.2781,
     phone: '+591 4 4345678',
-    hours: {
-      monday: '09:00 - 16:00',
-      tuesday: '09:00 - 16:00',
-      wednesday: '09:00 - 16:00',
-      thursday: '09:00 - 16:00',
-      friday: '09:00 - 16:00',
-      saturday: 'Cerrado',
-      sunday: 'Cerrado'
-    },
     services: ['Consultas', 'Información General'],
     type: 'punto_atencion'
   },
@@ -192,15 +129,6 @@ export const bolivianOffices: Office[] = [
     latitude: -19.0196,
     longitude: -65.2619,
     phone: '+591 4 6456789',
-    hours: {
-      monday: '08:00 - 16:00',
-      tuesday: '08:00 - 16:00',
-      wednesday: '08:00 - 16:00',
-      thursday: '08:00 - 16:00',
-      friday: '08:00 - 16:00',
-      saturday: '09:00 - 12:00',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Trámites Básicos', 'Consultas'],
     type: 'sucursal'
   },
@@ -215,15 +143,6 @@ export const bolivianOffices: Office[] = [
     latitude: -19.5723,
     longitude: -65.7550,
     phone: '+591 2 6234567',
-    hours: {
-      monday: '08:00 - 16:00',
-      tuesday: '08:00 - 16:00',
-      wednesday: '08:00 - 16:00',
-      thursday: '08:00 - 16:00',
-      friday: '08:00 - 16:00',
-      saturday: 'Cerrado',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Consultas', 'Pagos'],
     type: 'agencia'
   },
@@ -238,15 +157,6 @@ export const bolivianOffices: Office[] = [
     latitude: -17.9647,
     longitude: -67.1069,
     phone: '+591 2 5345678',
-    hours: {
-      monday: '08:30 - 16:30',
-      tuesday: '08:30 - 16:30',
-      wednesday: '08:30 - 16:30',
-      thursday: '08:30 - 16:30',
-      friday: '08:30 - 16:30',
-      saturday: '09:00 - 12:00',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Trámites Básicos', 'Consultas'],
     type: 'sucursal'
   },
@@ -261,15 +171,6 @@ export const bolivianOffices: Office[] = [
     latitude: -21.5355,
     longitude: -64.7296,
     phone: '+591 4 6567890',
-    hours: {
-      monday: '08:00 - 17:00',
-      tuesday: '08:00 - 17:00',
-      wednesday: '08:00 - 17:00',
-      thursday: '08:00 - 17:00',
-      friday: '08:00 - 17:00',
-      saturday: '09:00 - 12:00',
-      sunday: 'Cerrado'
-    },
     services: ['Atención al Cliente', 'Trámites Administrativos', 'Consultas', 'Pagos'],
     type: 'sucursal'
   },
@@ -284,15 +185,6 @@ export const bolivianOffices: Office[] = [
     latitude: -14.8336,
     longitude: -64.8999,
     phone: '+591 3 4623456',
-    hours: {
-      monday: '09:00 - 15:00',
-      tuesday: '09:00 - 15:00',
-      wednesday: '09:00 - 15:00',
-      thursday: '09:00 - 15:00',
-      friday: '09:00 - 15:00',
-      saturday: 'Cerrado',
-      sunday: 'Cerrado'
-    },
     services: ['Consultas', 'Información General'],
     type: 'punto_atencion'
   },
@@ -307,15 +199,6 @@ export const bolivianOffices: Office[] = [
     latitude: -11.0267,
     longitude: -68.7692,
     phone: '+591 3 8423456',
-    hours: {
-      monday: '09:00 - 15:00',
-      tuesday: '09:00 - 15:00',
-      wednesday: '09:00 - 15:00',
-      thursday: '09:00 - 15:00',
-      friday: '09:00 - 15:00',
-      saturday: 'Cerrado',
-      sunday: 'Cerrado'
-    },
     services: ['Consultas', 'Información General'],
     type: 'punto_atencion'
   }
