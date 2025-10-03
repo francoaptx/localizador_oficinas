@@ -212,6 +212,22 @@ export default defineConfig(({ mode }) => {
       host: "::",
       port: 3080,
     },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            // Agrupa las librerías de Leaflet en un chunk separado.
+            if (id.includes('node_modules/leaflet') || id.includes('node_modules/react-leaflet')) {
+              return 'leaflet-vendor';
+            }
+            // Agrupa las librerías de React en un chunk separado.
+            if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/react-router-dom')) {
+              return 'react-vendor';
+            }
+          },
+        },
+      },
+    },
     plugins: [
       react(),
       mode === 'development' &&

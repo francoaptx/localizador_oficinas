@@ -18,7 +18,7 @@ export interface Office {
   //   sunday: string;
   // };
   services: string[];
-  type: 'sucursal' | 'agencia' | 'punto_atencion' | 'oficina_central';
+  type: 'Dependencia'; //| 'agencia' | 'punto_atencion' | 'oficina_central';
   description?: string;
   nform_adicional?: string;
   image?: string;
@@ -37,7 +37,7 @@ export const bolivianOffices: Office[] = [
    phone: '64-45469',
    description: 'Edificio Dirección Administrativa Y Financiera',
    services: [],
-   type: "sucursal"
+   type: "Dependencia"
  },
   {
     id: '2',
@@ -50,7 +50,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '3',
@@ -63,7 +63,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '4',
@@ -76,7 +76,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '5',
@@ -89,7 +89,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '6',
@@ -102,7 +102,7 @@ export const bolivianOffices: Office[] = [
     phone: '69-12965',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '7',
@@ -115,7 +115,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '8',
@@ -128,7 +128,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Imprenta Judicial',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '9',
@@ -141,7 +141,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '10',
@@ -154,7 +154,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '11',
@@ -167,7 +167,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-45469',
     description: 'Edificio Dirección Administrativa Y Financiera',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '12',
@@ -180,7 +180,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 175',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '13',
@@ -193,7 +193,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 176',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '14',
@@ -206,7 +206,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 177',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '15',
@@ -219,7 +219,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 178',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '16',
@@ -232,7 +232,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 179',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '17',
@@ -245,7 +245,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 180',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '18',
@@ -258,7 +258,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 181',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '19',
@@ -271,7 +271,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 182',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '20',
@@ -284,7 +284,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 183',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '21',
@@ -297,7 +297,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 184',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '22',
@@ -310,7 +310,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 185',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '23',
@@ -323,7 +323,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 186',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '24',
@@ -336,7 +336,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 187',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '25',
@@ -349,7 +349,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6453200 Int. 188',
     description: 'Edificio Tribunal Supremo de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '27',
@@ -362,7 +362,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '28',
@@ -375,7 +375,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '29',
@@ -388,7 +388,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '30',
@@ -401,7 +401,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '31',
@@ -414,7 +414,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '32',
@@ -427,7 +427,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '33',
@@ -440,7 +440,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '34',
@@ -453,7 +453,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '35',
@@ -466,7 +466,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '36',
@@ -479,7 +479,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425091',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '37',
@@ -492,7 +492,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6425090, 4-6425092',
     description: 'Edificio Tribunal Agroambiental',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '38',
@@ -505,7 +505,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '39',
@@ -518,7 +518,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '40',
@@ -531,7 +531,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '41',
@@ -544,7 +544,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '42',
@@ -557,7 +557,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '43',
@@ -570,7 +570,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '44',
@@ -583,7 +583,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Gaceta Judicial',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '45',
@@ -596,7 +596,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '46',
@@ -609,7 +609,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '47',
@@ -622,7 +622,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '48',
@@ -635,7 +635,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '49',
@@ -648,7 +648,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '50',
@@ -661,7 +661,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '51',
@@ -674,7 +674,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '52',
@@ -687,7 +687,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '53',
@@ -700,7 +700,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '54',
@@ -713,7 +713,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '55',
@@ -726,7 +726,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '56',
@@ -739,7 +739,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '57',
@@ -752,7 +752,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '58',
@@ -765,7 +765,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6461600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '59',
@@ -778,7 +778,7 @@ export const bolivianOffices: Office[] = [
     phone: '64-61600',
     description: 'Edificio Consejo de La Magistratura',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '60',
@@ -791,7 +791,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4207',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '61',
@@ -804,7 +804,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4208',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '62',
@@ -817,7 +817,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4209',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '63',
@@ -830,7 +830,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4210',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '64',
@@ -843,7 +843,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4211',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '65',
@@ -856,7 +856,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4212',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '66',
@@ -869,7 +869,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4213',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '67',
@@ -882,7 +882,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4214',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '68',
@@ -895,7 +895,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4215',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '69',
@@ -908,7 +908,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4216',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '70',
@@ -921,7 +921,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4217',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '71',
@@ -934,7 +934,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4218',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '72',
@@ -947,7 +947,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4219',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '73',
@@ -960,7 +960,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4220',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '74',
@@ -973,7 +973,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4221',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '75',
@@ -986,7 +986,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4222',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '76',
@@ -999,7 +999,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4223',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '77',
@@ -1012,7 +1012,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4224',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '78',
@@ -1025,7 +1025,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4225',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '79',
@@ -1038,7 +1038,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4226',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '80',
@@ -1051,7 +1051,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4227',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '81',
@@ -1064,7 +1064,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4228',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '82',
@@ -1077,7 +1077,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4229',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '83',
@@ -1090,7 +1090,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4230',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '84',
@@ -1103,7 +1103,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4231',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '85',
@@ -1116,7 +1116,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4232',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '86',
@@ -1129,7 +1129,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4233',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '87',
@@ -1142,7 +1142,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4234',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '88',
@@ -1155,7 +1155,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4235',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '89',
@@ -1168,7 +1168,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4236',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '90',
@@ -1181,7 +1181,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4237',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '91',
@@ -1194,7 +1194,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4238',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '92',
@@ -1207,7 +1207,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4239',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '93',
@@ -1220,7 +1220,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4240',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '94',
@@ -1233,7 +1233,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4241',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '95',
@@ -1246,7 +1246,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4242',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '96',
@@ -1259,7 +1259,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4243',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '97',
@@ -1272,7 +1272,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4244',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '98',
@@ -1285,7 +1285,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4245',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '99',
@@ -1298,7 +1298,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4246',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '100',
@@ -1311,7 +1311,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4247',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '101',
@@ -1324,7 +1324,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4248',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '102',
@@ -1337,7 +1337,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4249',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '103',
@@ -1350,7 +1350,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4250',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '104',
@@ -1363,7 +1363,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4251',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '105',
@@ -1376,7 +1376,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4252',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '106',
@@ -1389,7 +1389,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4253',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '107',
@@ -1402,7 +1402,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4254',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '108',
@@ -1415,7 +1415,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4255',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '109',
@@ -1428,7 +1428,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4256',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '110',
@@ -1441,7 +1441,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4257',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '111',
@@ -1454,7 +1454,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4258',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '112',
@@ -1467,7 +1467,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4259',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '113',
@@ -1480,7 +1480,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4260',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '114',
@@ -1493,7 +1493,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4261',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '115',
@@ -1506,7 +1506,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4262',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '116',
@@ -1519,7 +1519,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4263',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '117',
@@ -1532,7 +1532,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4264',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '118',
@@ -1545,7 +1545,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4265',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '119',
@@ -1558,7 +1558,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4266',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '120',
@@ -1571,7 +1571,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4267',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '121',
@@ -1584,7 +1584,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4268',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '122',
@@ -1597,7 +1597,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4269',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '123',
@@ -1610,7 +1610,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4270',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '124',
@@ -1623,7 +1623,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4271',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '125',
@@ -1636,7 +1636,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4272',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '126',
@@ -1649,7 +1649,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4273',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '127',
@@ -1662,7 +1662,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4274',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '128',
@@ -1675,7 +1675,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4275',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '129',
@@ -1688,7 +1688,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4276',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '130',
@@ -1701,7 +1701,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4277',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '131',
@@ -1714,7 +1714,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4278',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '132',
@@ -1727,7 +1727,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4279',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '133',
@@ -1740,7 +1740,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4280',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '134',
@@ -1753,7 +1753,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4281',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '135',
@@ -1766,7 +1766,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4282',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '136',
@@ -1779,7 +1779,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4283',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '137',
@@ -1792,7 +1792,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4284',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '138',
@@ -1805,7 +1805,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4285',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '139',
@@ -1818,7 +1818,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4286',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '140',
@@ -1831,7 +1831,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4287',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '141',
@@ -1844,7 +1844,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4288',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '142',
@@ -1857,7 +1857,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4289',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '143',
@@ -1870,7 +1870,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-4) 6454400 Internos 4204-4206-4290',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '144',
@@ -1883,7 +1883,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Tarabuco',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '145',
@@ -1896,7 +1896,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Padilla',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '146',
@@ -1909,7 +1909,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa En Alquiler',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '147',
@@ -1922,7 +1922,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Camargo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '148',
@@ -1935,7 +1935,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Villa Azurduy',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '149',
@@ -1948,7 +1948,7 @@ export const bolivianOffices: Office[] = [
     description: 'Juzgado Agroambiental de Macharetí',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '150',
@@ -1961,7 +1961,7 @@ export const bolivianOffices: Office[] = [
     description: 'Juzgado Agroambiental de San Lucas',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '151',
@@ -1974,7 +1974,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Monteagudo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '152',
@@ -1987,7 +1987,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa En Alquiler',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '153',
@@ -2000,7 +2000,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Particular (Oficina en alquiler) ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '155',
@@ -2013,7 +2013,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Monteagudo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '156',
@@ -2026,7 +2026,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa En Alquiler',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '158',
@@ -2039,7 +2039,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Monteagudo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '159',
@@ -2052,7 +2052,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Muyupampa',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '160',
@@ -2065,7 +2065,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Muyupampa',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '161',
@@ -2078,7 +2078,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Incahuasi',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '162',
@@ -2091,7 +2091,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Incahuasi',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '163',
@@ -2104,7 +2104,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Camargo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '164',
@@ -2117,7 +2117,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Camargo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '165',
@@ -2130,7 +2130,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Camargo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '166',
@@ -2143,7 +2143,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Camargo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '167',
@@ -2156,7 +2156,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Camargo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '168',
@@ -2169,7 +2169,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6936082 4-6936072',
     description: 'Casa de Justicia de Tarabuco',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '169',
@@ -2182,7 +2182,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6936082 4-6936072',
     description: 'Casa de Justicia de Tarabuco',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '170',
@@ -2195,7 +2195,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia - Redención Pampa',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '171',
@@ -2208,7 +2208,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Padilla',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '172',
@@ -2221,7 +2221,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Padilla',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '173',
@@ -2234,7 +2234,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Padilla',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '174',
@@ -2247,7 +2247,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Padilla',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '175',
@@ -2260,7 +2260,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Padilla',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '176',
@@ -2273,7 +2273,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Padilla',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '177',
@@ -2286,7 +2286,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6936528',
     description: 'Casa de Justicia de Zudáñez',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '178',
@@ -2299,7 +2299,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa en Alquiler',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '179',
@@ -2312,7 +2312,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Villa Azurduy',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '180',
@@ -2325,7 +2325,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6937680',
     description: 'Casa de Justicia de Villa Abecia (Camatarqui)',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '181',
@@ -2338,7 +2338,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-6936032',
     description: 'Casa de Justicia de Villa Serrano',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '182',
@@ -2351,7 +2351,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de San Lucas',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '183',
@@ -2364,7 +2364,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de San Lucas',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '184',
@@ -2377,7 +2377,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Culpina',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '185',
@@ -2390,7 +2390,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Huacareta',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '186',
@@ -2403,7 +2403,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Sopachuy',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '187',
@@ -2416,7 +2416,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Macharetí',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '188',
@@ -2429,7 +2429,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa de Justicia de Poroma',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '189',
@@ -2442,7 +2442,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa En Alquiler',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '190',
@@ -2455,7 +2455,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '199',
@@ -2468,7 +2468,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   // {
   //   id: '200',
@@ -2481,7 +2481,7 @@ export const bolivianOffices: Office[] = [
   //   description: 'La Paz',
   //   phone: "",
   //   services: [],
-  //   type: "sucursal"
+  //   type: "Dependencia"
   // },
   {
     id: '201',
@@ -2494,7 +2494,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013047 int 302',
     description: 'La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '202',
@@ -2507,7 +2507,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '210',
@@ -2520,7 +2520,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '211',
@@ -2533,7 +2533,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '212',
@@ -2546,7 +2546,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '213',
@@ -2559,7 +2559,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '214',
@@ -2572,7 +2572,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '215',
@@ -2585,7 +2585,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '216',
@@ -2598,7 +2598,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '217',
@@ -2611,7 +2611,7 @@ export const bolivianOffices: Office[] = [
     phone: '6454400',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '218',
@@ -2624,7 +2624,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '219',
@@ -2637,7 +2637,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3342',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '220',
@@ -2650,7 +2650,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '221',
@@ -2663,7 +2663,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3393',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '222',
@@ -2676,7 +2676,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '223',
@@ -2689,7 +2689,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2407775 2-2407599 2-2407660 2-2408857 2-2124662',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '224',
@@ -2702,7 +2702,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2407775 2-2407599 2-2407660 2-2408857 2-2124662',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '225',
@@ -2715,7 +2715,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '226',
@@ -2728,7 +2728,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '227',
@@ -2741,7 +2741,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '228',
@@ -2754,7 +2754,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Mumanal',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '229',
@@ -2767,7 +2767,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '230',
@@ -2780,7 +2780,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '231',
@@ -2793,7 +2793,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Colón',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '232',
@@ -2806,7 +2806,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '233',
@@ -2819,7 +2819,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '234',
@@ -2832,7 +2832,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '236',
@@ -2845,7 +2845,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '237',
@@ -2858,7 +2858,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '238',
@@ -2871,7 +2871,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '239',
@@ -2884,7 +2884,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '240',
@@ -2897,7 +2897,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '241',
@@ -2910,7 +2910,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '242',
@@ -2923,7 +2923,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '243',
@@ -2936,7 +2936,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Colón',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '244',
@@ -2949,7 +2949,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Colón',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '245',
@@ -2962,7 +2962,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Colón',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '246',
@@ -2975,7 +2975,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Colón',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '247',
@@ -2988,7 +2988,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '248',
@@ -3001,7 +3001,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3334',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '249',
@@ -3014,7 +3014,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '250',
@@ -3027,7 +3027,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-4621743',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '251',
@@ -3040,7 +3040,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3641',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '252',
@@ -3053,7 +3053,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '253',
@@ -3066,7 +3066,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3631',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '254',
@@ -3079,7 +3079,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '255',
@@ -3092,7 +3092,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3627',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '256',
@@ -3105,7 +3105,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2124683',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '257',
@@ -3118,7 +3118,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3383',
     description: 'Anexo A',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '258',
@@ -3131,7 +3131,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '259',
@@ -3144,7 +3144,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '260',
@@ -3157,7 +3157,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '261',
@@ -3170,7 +3170,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '262',
@@ -3183,7 +3183,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '263',
@@ -3196,7 +3196,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '324',
@@ -3209,7 +3209,7 @@ export const bolivianOffices: Office[] = [
     description: 'La Paz ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '326',
@@ -3222,7 +3222,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Lyn',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '327',
@@ -3235,7 +3235,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Lyn',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '328',
@@ -3248,7 +3248,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Lyn',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '329',
@@ -3261,7 +3261,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Lyb',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '337',
@@ -3274,7 +3274,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '338',
@@ -3287,7 +3287,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '339',
@@ -3300,7 +3300,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '340',
@@ -3313,7 +3313,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '341',
@@ -3326,7 +3326,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '342',
@@ -3339,7 +3339,7 @@ export const bolivianOffices: Office[] = [
     description: 'Anexo A',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '343',
@@ -3352,7 +3352,7 @@ export const bolivianOffices: Office[] = [
     description: 'Mumanal',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '379',
@@ -3365,7 +3365,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3232-3229-3230-3231',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '380',
@@ -3378,7 +3378,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3227-3217-3218-3219',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '381',
@@ -3391,7 +3391,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3214-3115-3117-3245',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '382',
@@ -3404,7 +3404,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3122-3106-3107-3122',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '383',
@@ -3417,7 +3417,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3128-3127',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '384',
@@ -3430,7 +3430,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3130-3129',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '385',
@@ -3443,7 +3443,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3132-3131',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '386',
@@ -3456,7 +3456,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3134-3133',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '387',
@@ -3469,7 +3469,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3251-3250',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '388',
@@ -3482,7 +3482,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3253-3252',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '389',
@@ -3495,7 +3495,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3255-3254',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '390',
@@ -3508,7 +3508,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Judicial El Alto',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '391',
@@ -3521,7 +3521,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Judicial El Alto',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '392',
@@ -3534,7 +3534,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Judicial El Alto',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '393',
@@ -3547,7 +3547,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Judicial El Alto',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '394',
@@ -3560,7 +3560,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Judicial El Alto',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '395',
@@ -3573,7 +3573,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3150-3151-3149',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '396',
@@ -3586,7 +3586,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Judicial El Alto',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '397',
@@ -3599,7 +3599,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3136-3135',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '398',
@@ -3612,7 +3612,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3138-3137',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '399',
@@ -3625,7 +3625,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3140-3139',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '400',
@@ -3638,7 +3638,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3142-3141',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '401',
@@ -3651,7 +3651,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3144-3143',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '402',
@@ -3664,7 +3664,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3146-3145',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '403',
@@ -3677,7 +3677,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3148-3147',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '404',
@@ -3690,7 +3690,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3207-3206',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '405',
@@ -3703,7 +3703,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3209-3208',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '406',
@@ -3716,7 +3716,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3211-3210',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '407',
@@ -3729,7 +3729,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 3213-3212',
     description: 'Edificio Judicial El Alto',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '440',
@@ -3742,7 +3742,7 @@ export const bolivianOffices: Office[] = [
     description: 'El Alto ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '441',
@@ -3755,7 +3755,7 @@ export const bolivianOffices: Office[] = [
     description: 'El Alto ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '442',
@@ -3768,7 +3768,7 @@ export const bolivianOffices: Office[] = [
     description: 'El Alto ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '443',
@@ -3781,7 +3781,7 @@ export const bolivianOffices: Office[] = [
     description: 'El Alto ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '444',
@@ -3794,7 +3794,7 @@ export const bolivianOffices: Office[] = [
     description: 'El Alto ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '445',
@@ -3807,7 +3807,7 @@ export const bolivianOffices: Office[] = [
     description: 'El Alto ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '451',
@@ -3820,7 +3820,7 @@ export const bolivianOffices: Office[] = [
     description: 'Copacabana',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '455',
@@ -3833,7 +3833,7 @@ export const bolivianOffices: Office[] = [
     description: 'Copacabana',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '456',
@@ -3846,7 +3846,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-22135660',
     description: 'Sica sica',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '458',
@@ -3859,7 +3859,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-22135660',
     description: 'Sica sica',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '459',
@@ -3872,7 +3872,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2135037',
     description: 'Viacha',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '460',
@@ -3885,7 +3885,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2135037',
     description: 'Viacha',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '463',
@@ -3898,7 +3898,7 @@ export const bolivianOffices: Office[] = [
     description: 'Guaqui',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '464',
@@ -3911,7 +3911,7 @@ export const bolivianOffices: Office[] = [
     description: 'Guaqui',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '465',
@@ -3924,7 +3924,7 @@ export const bolivianOffices: Office[] = [
     description: 'Sorata',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '466',
@@ -3937,7 +3937,7 @@ export const bolivianOffices: Office[] = [
     description: 'Sorata',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '467',
@@ -3950,7 +3950,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2136019',
     description: 'Coroico',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '468',
@@ -3963,7 +3963,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2136019',
     description: 'Coroico',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '469',
@@ -3976,7 +3976,7 @@ export const bolivianOffices: Office[] = [
     description: 'Chulumani',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '470',
@@ -3989,7 +3989,7 @@ export const bolivianOffices: Office[] = [
     description: 'Chulumani',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '471',
@@ -4002,7 +4002,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-22134228',
     description: 'Inquisivi',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '472',
@@ -4015,7 +4015,7 @@ export const bolivianOffices: Office[] = [
     description: 'Apolo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '473',
@@ -4028,7 +4028,7 @@ export const bolivianOffices: Office[] = [
     description: 'Apolo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '474',
@@ -4041,7 +4041,7 @@ export const bolivianOffices: Office[] = [
     description: 'Chuma',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '475',
@@ -4054,7 +4054,7 @@ export const bolivianOffices: Office[] = [
     description: 'Achacachi',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '476',
@@ -4067,7 +4067,7 @@ export const bolivianOffices: Office[] = [
     description: 'Achacachi',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '478',
@@ -4080,7 +4080,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-22135660',
     description: 'Patacamaya',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '479',
@@ -4093,7 +4093,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-22135660',
     description: 'Patacamaya',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '480',
@@ -4106,7 +4106,7 @@ export const bolivianOffices: Office[] = [
     description: 'Pucarani',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '481',
@@ -4119,7 +4119,7 @@ export const bolivianOffices: Office[] = [
     description: 'Pucarani',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '482',
@@ -4132,7 +4132,7 @@ export const bolivianOffices: Office[] = [
     description: 'Quime',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '483',
@@ -4145,7 +4145,7 @@ export const bolivianOffices: Office[] = [
     description: 'Moco Moco',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '484',
@@ -4158,7 +4158,7 @@ export const bolivianOffices: Office[] = [
     description: 'Luribay',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '485',
@@ -4171,7 +4171,7 @@ export const bolivianOffices: Office[] = [
     description: 'Puerto Carabuco',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '486',
@@ -4184,7 +4184,7 @@ export const bolivianOffices: Office[] = [
     description: 'Guanay',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '487',
@@ -4197,7 +4197,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-135037',
     description: 'Coro Coro',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '488',
@@ -4210,7 +4210,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-135037',
     description: 'Coro Coro',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '489',
@@ -4223,7 +4223,7 @@ export const bolivianOffices: Office[] = [
     description: 'Puerto Acosta',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '490',
@@ -4236,7 +4236,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-2119211',
     description: 'Charazani',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '491',
@@ -4249,7 +4249,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-408857',
     description: 'Achocalla',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '492',
@@ -4262,7 +4262,7 @@ export const bolivianOffices: Office[] = [
     phone: '2-8243768',
     description: 'Ixiamas',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '493',
@@ -4275,7 +4275,7 @@ export const bolivianOffices: Office[] = [
     description: 'Palos Blancos',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '494',
@@ -4288,7 +4288,7 @@ export const bolivianOffices: Office[] = [
     description: 'Colquiri',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '495',
@@ -4301,7 +4301,7 @@ export const bolivianOffices: Office[] = [
     description: 'La Asunta',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '496',
@@ -4314,7 +4314,7 @@ export const bolivianOffices: Office[] = [
     description: 'Sapahaqui',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '497',
@@ -4327,7 +4327,7 @@ export const bolivianOffices: Office[] = [
     description: 'San Andres de Machaca',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '498',
@@ -4340,7 +4340,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '499',
@@ -4353,7 +4353,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '500',
@@ -4366,7 +4366,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '501',
@@ -4379,7 +4379,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '502',
@@ -4392,7 +4392,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '503',
@@ -4405,7 +4405,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '504',
@@ -4418,7 +4418,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '505',
@@ -4431,7 +4431,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '506',
@@ -4444,7 +4444,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '507',
@@ -4457,7 +4457,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '508',
@@ -4470,7 +4470,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '509',
@@ -4483,7 +4483,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '510',
@@ -4496,7 +4496,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '511',
@@ -4509,7 +4509,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '512',
@@ -4522,7 +4522,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '513',
@@ -4535,7 +4535,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '514',
@@ -4548,7 +4548,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '515',
@@ -4561,7 +4561,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '516',
@@ -4574,7 +4574,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '517',
@@ -4587,7 +4587,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '518',
@@ -4600,7 +4600,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '519',
@@ -4613,7 +4613,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '520',
@@ -4626,7 +4626,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '521',
@@ -4639,7 +4639,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '522',
@@ -4652,7 +4652,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013029',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '523',
@@ -4665,7 +4665,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013058',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '524',
@@ -4678,7 +4678,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013024',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '525',
@@ -4691,7 +4691,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013029',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '526',
@@ -4704,7 +4704,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013029',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '527',
@@ -4717,7 +4717,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013026',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '528',
@@ -4730,7 +4730,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '529',
@@ -4743,7 +4743,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '530',
@@ -4756,7 +4756,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '531',
@@ -4769,7 +4769,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '532',
@@ -4782,7 +4782,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '533',
@@ -4795,7 +4795,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '534',
@@ -4808,7 +4808,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '535',
@@ -4821,7 +4821,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '536',
@@ -4834,7 +4834,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013090 int 802',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '537',
@@ -4847,7 +4847,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013065 int 502',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '538',
@@ -4860,7 +4860,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013067 int 504',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '539',
@@ -4873,7 +4873,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013069 int 506',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '540',
@@ -4886,7 +4886,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013071 int 508',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '541',
@@ -4899,7 +4899,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4010156 int 509',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '542',
@@ -4912,7 +4912,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013082 int 702',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '543',
@@ -4925,7 +4925,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4013082 int 702',
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '544',
@@ -4938,7 +4938,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '545',
@@ -4951,7 +4951,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '546',
@@ -4964,7 +4964,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '547',
@@ -4977,7 +4977,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '599',
@@ -4990,7 +4990,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Epi Norte',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '601',
@@ -5003,7 +5003,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Epi Sur',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '602',
@@ -5016,7 +5016,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Epi Sur',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '603',
@@ -5029,7 +5029,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Epi Sur',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '604',
@@ -5042,7 +5042,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Epi Sur',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '605',
@@ -5055,7 +5055,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Epi Norte',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '608',
@@ -5068,7 +5068,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '609',
@@ -5081,7 +5081,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '610',
@@ -5094,7 +5094,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '611',
@@ -5107,7 +5107,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '612',
@@ -5120,7 +5120,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '613',
@@ -5133,7 +5133,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio principal del Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '614',
@@ -5146,7 +5146,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio de Justicia Quillacollo-Cochabamba',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '615',
@@ -5159,7 +5159,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio de Justicia Quillacollo-Cochabamba',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '616',
@@ -5172,7 +5172,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial de Sacaba',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '646',
@@ -5185,7 +5185,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4343281',
     description: 'Casa Judicial de Aiquile',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '647',
@@ -5198,7 +5198,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial de Aiquile',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '649',
@@ -5211,7 +5211,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4576260',
     description: 'Juzgados',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '650',
@@ -5224,7 +5224,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4576260',
     description: 'Juzgados',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '651',
@@ -5237,7 +5237,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial de Arque',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '652',
@@ -5250,7 +5250,7 @@ export const bolivianOffices: Office[] = [
     description: 'Juzgados',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '653',
@@ -5263,7 +5263,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4388300',
     description: 'Casa Judicial de Capinota',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '654',
@@ -5276,7 +5276,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4388300',
     description: 'Casa Judicial de Capinota',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '655',
@@ -5289,7 +5289,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Chimore',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '656',
@@ -5302,7 +5302,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4505543',
     description: 'Juzgados',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '657',
@@ -5315,7 +5315,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '659',
@@ -5328,7 +5328,7 @@ export const bolivianOffices: Office[] = [
     description: 'Juzgados',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '660',
@@ -5341,7 +5341,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4579767',
     description: 'Edificio Rocha',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '661',
@@ -5354,7 +5354,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4579767',
     description: 'Edificio Rocha',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '664',
@@ -5367,7 +5367,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Ivirgarzama',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '665',
@@ -5380,7 +5380,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Ivirgarzama',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '666',
@@ -5393,7 +5393,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Ivirgarzama',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '667',
@@ -5406,7 +5406,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Ivirgarzama',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '669',
@@ -5419,7 +5419,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial de Independencia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '670',
@@ -5432,7 +5432,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial de Mizque',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '671',
@@ -5445,7 +5445,7 @@ export const bolivianOffices: Office[] = [
     description: 'Juzgados',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '672',
@@ -5458,7 +5458,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Morochata',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '678',
@@ -5471,7 +5471,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4363217',
     description: 'Edificio Principal Quillacollo',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '679',
@@ -5484,7 +5484,7 @@ export const bolivianOffices: Office[] = [
     phone: '4- 4592403',
     description: 'Edificio Queen',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '680',
@@ -5497,7 +5497,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4361656',
     description: 'Edificio Principal Quillacollo',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '691',
@@ -5510,7 +5510,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Principal Quillacollo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '692',
@@ -5523,7 +5523,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4361656',
     description: 'Edificio Rocabado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '693',
@@ -5536,7 +5536,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4361656',
     description: 'Edificio Principal Quillacollo',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '694',
@@ -5549,7 +5549,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Principal Quillacollo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '695',
@@ -5562,7 +5562,7 @@ export const bolivianOffices: Office[] = [
     description: 'Edificio Principal Quillacollo',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '696',
@@ -5575,7 +5575,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '698',
@@ -5588,7 +5588,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4380075',
     description: 'Juzgados',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '700',
@@ -5601,7 +5601,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4010689 INT 979',
     description: 'Casa Judicial Sacaba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '701',
@@ -5614,7 +5614,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4010680 int 984',
     description: 'Casa Judicial Sacaba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '702',
@@ -5627,7 +5627,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4010695 int 978',
     description: 'Casa Judicial Sacaba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '703',
@@ -5640,7 +5640,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4010688',
     description: 'Casa Judicial Sacaba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '713',
@@ -5653,7 +5653,7 @@ export const bolivianOffices: Office[] = [
     description: 'Alcaldia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '714',
@@ -5666,7 +5666,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4579496',
     description: 'Casa Judicial de Tarata',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '715',
@@ -5679,7 +5679,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4579496',
     description: 'Casa Judicial de Tarata',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '716',
@@ -5692,7 +5692,7 @@ export const bolivianOffices: Office[] = [
     description: 'Juzgados',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '717',
@@ -5705,7 +5705,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4317200',
     description: 'Juzgados',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '718',
@@ -5718,7 +5718,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4317200',
     description: 'Juzgados',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '720',
@@ -5731,7 +5731,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial de Tiraque',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '721',
@@ -5744,7 +5744,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial de Tiraque',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '722',
@@ -5757,7 +5757,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4341081',
     description: 'Casa Judicial de Totora',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '723',
@@ -5770,7 +5770,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4341081',
     description: 'Casa Judicial de Totora',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '724',
@@ -5783,7 +5783,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4357732',
     description: 'Juzgados',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '725',
@@ -5796,7 +5796,7 @@ export const bolivianOffices: Office[] = [
     phone: '4-4357732',
     description: 'Juzgados',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '727',
@@ -5809,7 +5809,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Villa Tunari',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '728',
@@ -5822,7 +5822,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Villa Tunari',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '729',
@@ -5835,7 +5835,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Villa Tunari',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '730',
@@ -5848,7 +5848,7 @@ export const bolivianOffices: Office[] = [
     phone: '-16971924000000',
     description: 'Casa Judicial Villa Tunari',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '732',
@@ -5861,7 +5861,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5074',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '733',
@@ -5874,7 +5874,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5073',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '734',
@@ -5887,7 +5887,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5010 (Presidente), 5075 (Sec)',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '735',
@@ -5899,7 +5899,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '736',
@@ -5911,7 +5911,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '737',
@@ -5924,7 +5924,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5017 (Vocal), 5018 (Vocal), 5079 (Sec)',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '738',
@@ -5937,7 +5937,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5019 (Vocal), 5020 (Vocal), 5080 (Sec)',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '739',
@@ -5950,7 +5950,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5011 (Vocal), 5014 (Vocal), 5112 (Sec)',
     description: 'Tribunal Departamental de Justicia (ANEXO B)',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '740',
@@ -5962,7 +5962,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '741',
@@ -5974,7 +5974,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '742',
@@ -5986,7 +5986,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '743',
@@ -5999,7 +5999,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5021,5022,5023 (Jueces), 5138(Sec)',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '744',
@@ -6012,7 +6012,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5024,5025,5026 (Jueces), 5139(Sec)',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '745',
@@ -6025,7 +6025,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5027,5028,5029 (Jueces), 5140(Sec)',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '746',
@@ -6038,7 +6038,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5030 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '747',
@@ -6051,7 +6051,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5031 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '748',
@@ -6064,7 +6064,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5092 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '749',
@@ -6077,7 +6077,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5093 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '750',
@@ -6090,7 +6090,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5021 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '751',
@@ -6103,7 +6103,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5021 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '752',
@@ -6116,7 +6116,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5021 (Juez).',
     description: 'Tribunal Departamental de Justicia (ANEXO B)',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '753',
@@ -6129,7 +6129,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5032 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '754',
@@ -6142,7 +6142,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5033 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '755',
@@ -6155,7 +6155,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5034 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '756',
@@ -6168,7 +6168,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5035 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '757',
@@ -6181,7 +6181,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5036 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '758',
@@ -6194,7 +6194,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5037 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '759',
@@ -6207,7 +6207,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5330 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '760',
@@ -6220,7 +6220,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5117 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '761',
@@ -6233,7 +6233,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5117 (Juez).',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '792',
@@ -6246,7 +6246,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5034 (Encargada), 5141 (Auxiliar)',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '793',
@@ -6259,7 +6259,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5036 (Coordinadora), 5135 (Sistemas) ',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '794',
@@ -6272,7 +6272,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 5252712 - 5251664 - 5250342 (Central) Internos 5037 (Coordinadora)',
     description: 'Edificio Penales',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '840',
@@ -6285,7 +6285,7 @@ export const bolivianOffices: Office[] = [
     phone: ' Internos 8121',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '841',
@@ -6298,7 +6298,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-2) 6223700 Internos 8121',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '842',
@@ -6311,7 +6311,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8101 -8113',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '844',
@@ -6324,7 +6324,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8110-8114-8103',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '845',
@@ -6337,7 +6337,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8116-8117-8105',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '846',
@@ -6350,7 +6350,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8118-8119-8106',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '851',
@@ -6363,7 +6363,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8082-8083-8095-8084',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '852',
@@ -6376,7 +6376,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8126-8127-8128',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '853',
@@ -6389,7 +6389,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8048-8049',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '854',
@@ -6402,7 +6402,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8036-8037',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '855',
@@ -6415,7 +6415,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8145-8146',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '856',
@@ -6428,7 +6428,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8147-8148',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '857',
@@ -6441,7 +6441,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8023-8024',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '858',
@@ -6454,7 +6454,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8080-8081',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '859',
@@ -6467,7 +6467,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8191-8079',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '860',
@@ -6480,7 +6480,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8154-8155',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '861',
@@ -6493,7 +6493,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8136-8138',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '862',
@@ -6506,7 +6506,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8054-8055',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '863',
@@ -6519,7 +6519,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8034-8035',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '864',
@@ -6532,7 +6532,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8032-8033',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '865',
@@ -6545,7 +6545,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8030-8031',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '866',
@@ -6558,7 +6558,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8028-8029',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '892',
@@ -6571,7 +6571,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8152',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '893',
@@ -6584,7 +6584,7 @@ export const bolivianOffices: Office[] = [
     phone: 'Internos 8151',
     description: 'Tribunal Departamental de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '918',
@@ -6596,7 +6596,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.7163150000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '926',
@@ -6608,7 +6608,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.7162170000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '927',
@@ -6620,7 +6620,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.5928010000000,
     phone: '25974924',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '931',
@@ -6632,7 +6632,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.5927160000000,
     phone: '25972828',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '932',
@@ -6644,7 +6644,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.5927160000000,
     phone: '25974923',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '935',
@@ -6656,7 +6656,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.5719310000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '939',
@@ -6668,7 +6668,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.5719050000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '940',
@@ -6680,7 +6680,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.5719060000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '943',
@@ -6692,7 +6692,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.8249810000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '950',
@@ -6704,7 +6704,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.8249810000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '951',
@@ -6716,7 +6716,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.5057000000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '952',
@@ -6728,7 +6728,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.5750040000000,
     phone: 'S/N',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '953',
@@ -6740,7 +6740,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.5750040000000,
     phone: 'S/N',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '961',
@@ -6752,7 +6752,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.0029800000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '962',
@@ -6764,7 +6764,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.0029810000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '963',
@@ -6776,7 +6776,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.6599000000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '964',
@@ -6788,7 +6788,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.6599000000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '965',
@@ -6800,7 +6800,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.2206130000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '966',
@@ -6812,7 +6812,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.2206130000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '967',
@@ -6824,7 +6824,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.4545030000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '968',
@@ -6836,7 +6836,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.4545030000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '969',
@@ -6848,7 +6848,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.9810020000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '970',
@@ -6860,7 +6860,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.9810020000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '971',
@@ -6872,7 +6872,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.5056740000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '972',
@@ -6884,7 +6884,7 @@ export const bolivianOffices: Office[] = [
     longitude: -67.6607150000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '973',
@@ -6896,7 +6896,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.4932640000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '974',
@@ -6908,7 +6908,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.3847570000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   // {
   //   id: '975',
@@ -6920,7 +6920,7 @@ export const bolivianOffices: Office[] = [
   //   longitude: -65.5110270000000,
   //   phone: "",
   //   services: [],
-  //   type: "sucursal"
+  //   type: "Dependencia"
   // },
   {
     id: '976',
@@ -6932,7 +6932,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.8226430000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '977',
@@ -6944,7 +6944,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.6541480000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '978',
@@ -6956,7 +6956,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.7946470000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '979',
@@ -6968,7 +6968,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.0588620000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '980',
@@ -6980,7 +6980,7 @@ export const bolivianOffices: Office[] = [
     longitude: -66.0814960000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '981',
@@ -6992,7 +6992,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.7627640000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '984',
@@ -7005,7 +7005,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6000',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '985',
@@ -7018,7 +7018,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6001',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '986',
@@ -7031,7 +7031,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6002',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '987',
@@ -7044,7 +7044,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6003',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '988',
@@ -7057,7 +7057,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6010',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '989',
@@ -7070,7 +7070,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6013',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '990',
@@ -7083,7 +7083,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6008',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '991',
@@ -7096,7 +7096,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6006',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '992',
@@ -7109,7 +7109,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6021',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '993',
@@ -7122,7 +7122,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6322',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '994',
@@ -7135,7 +7135,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6111',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '995',
@@ -7148,7 +7148,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6113',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '996',
@@ -7161,7 +7161,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6115',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '997',
@@ -7174,7 +7174,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6117',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '998',
@@ -7187,7 +7187,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6019',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '999',
@@ -7200,7 +7200,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6121',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1000',
@@ -7213,7 +7213,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6429',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1001',
@@ -7226,7 +7226,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6431',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1002',
@@ -7239,7 +7239,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6433',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1003',
@@ -7252,7 +7252,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6129',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1004',
@@ -7265,7 +7265,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6212',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1005',
@@ -7278,7 +7278,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6214',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1006',
@@ -7291,7 +7291,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6217',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1007',
@@ -7304,7 +7304,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6219',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1008',
@@ -7317,7 +7317,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6202',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1009',
@@ -7330,7 +7330,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6204',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1010',
@@ -7343,7 +7343,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1011',
@@ -7356,7 +7356,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6231',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1012',
@@ -7369,7 +7369,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6233',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1013',
@@ -7382,7 +7382,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6234',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1014',
@@ -7395,7 +7395,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6237',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1015',
@@ -7408,7 +7408,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6239',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1016',
@@ -7421,7 +7421,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6241',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1017',
@@ -7434,7 +7434,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6243',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1018',
@@ -7447,7 +7447,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6245',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1019',
@@ -7460,7 +7460,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6247',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1020',
@@ -7473,7 +7473,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6249',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1021',
@@ -7486,7 +7486,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6251',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1022',
@@ -7499,7 +7499,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6152',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1023',
@@ -7512,7 +7512,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6154',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1024',
@@ -7525,7 +7525,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6156',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1025',
@@ -7538,7 +7538,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6158',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1026',
@@ -7551,7 +7551,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6160',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1027',
@@ -7564,7 +7564,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1028',
@@ -7577,7 +7577,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6302',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1029',
@@ -7590,7 +7590,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6304',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1030',
@@ -7603,7 +7603,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6306',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1031',
@@ -7616,7 +7616,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6131',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1032',
@@ -7629,7 +7629,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6133',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1033',
@@ -7642,7 +7642,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6135',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1034',
@@ -7655,7 +7655,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6251',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1035',
@@ -7668,7 +7668,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6415',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1036',
@@ -7681,7 +7681,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6721',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1037',
@@ -7694,7 +7694,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6720',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1038',
@@ -7707,7 +7707,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6720',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1039',
@@ -7720,7 +7720,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1040',
@@ -7733,7 +7733,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6307',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1041',
@@ -7746,7 +7746,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6223',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1042',
@@ -7759,7 +7759,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1043',
@@ -7772,7 +7772,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6602',
     description: 'Edificio alquilado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1044',
@@ -7785,7 +7785,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6414',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1045',
@@ -7798,7 +7798,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6610',
     description: 'Edificio alquilado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1046',
@@ -7811,7 +7811,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6608',
     description: 'Edificio alquilado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1047',
@@ -7824,7 +7824,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6704',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1048',
@@ -7837,7 +7837,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6701',
     description: 'Mercado Bolivar',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1049',
@@ -7850,7 +7850,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6606',
     description: 'Edificio alquilado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1050',
@@ -7863,7 +7863,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6603',
     description: 'Edificio alquilado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1051',
@@ -7876,7 +7876,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6413',
     description: 'Tribunal departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1052',
@@ -7889,7 +7889,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6512',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1053',
@@ -7902,7 +7902,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6501',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1054',
@@ -7915,7 +7915,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6502',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1055',
@@ -7928,7 +7928,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6507',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1056',
@@ -7941,7 +7941,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6518',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1057',
@@ -7954,7 +7954,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno no tiene',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1058',
@@ -7967,7 +7967,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno no tiene',
     description: 'Edificio Av. La Paz',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1059',
@@ -7980,7 +7980,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591 4) 66 45196 Interno 6705',
     description: 'Edificio alquilado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1060',
@@ -7993,7 +7993,7 @@ export const bolivianOffices: Office[] = [
     phone: '6649477',
     description: 'casa alquilada',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1061',
@@ -8006,7 +8006,7 @@ export const bolivianOffices: Office[] = [
     phone: '0104-6723678',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1062',
@@ -8019,7 +8019,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1063',
@@ -8032,7 +8032,7 @@ export const bolivianOffices: Office[] = [
     phone: '0104-6133338',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1064',
@@ -8045,7 +8045,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1065',
@@ -8058,7 +8058,7 @@ export const bolivianOffices: Office[] = [
     phone: '6672698',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1066',
@@ -8071,7 +8071,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1067',
@@ -8084,7 +8084,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1068',
@@ -8097,7 +8097,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1069',
@@ -8110,7 +8110,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1070',
@@ -8123,7 +8123,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1071',
@@ -8136,7 +8136,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1072',
@@ -8149,7 +8149,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1073',
@@ -8162,7 +8162,7 @@ export const bolivianOffices: Office[] = [
     phone: '0104-6722362',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1074',
@@ -8175,7 +8175,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1075',
@@ -8188,7 +8188,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1076',
@@ -8201,7 +8201,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1077',
@@ -8214,7 +8214,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1078',
@@ -8227,7 +8227,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1079',
@@ -8240,7 +8240,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1080',
@@ -8253,7 +8253,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1081',
@@ -8266,7 +8266,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1082',
@@ -8279,7 +8279,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1083',
@@ -8292,7 +8292,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1084',
@@ -8305,7 +8305,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1085',
@@ -8318,7 +8318,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1086',
@@ -8331,7 +8331,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1087',
@@ -8344,7 +8344,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1088',
@@ -8357,7 +8357,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1089',
@@ -8370,7 +8370,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yacuiba',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1090',
@@ -8383,7 +8383,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1091',
@@ -8396,7 +8396,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1092',
@@ -8409,7 +8409,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1093',
@@ -8422,7 +8422,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1094',
@@ -8435,7 +8435,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1095',
@@ -8448,7 +8448,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1096',
@@ -8461,7 +8461,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1097',
@@ -8474,7 +8474,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1098',
@@ -8487,7 +8487,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1099',
@@ -8500,7 +8500,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1100',
@@ -8513,7 +8513,7 @@ export const bolivianOffices: Office[] = [
     phone: '0104-6133346',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1101',
@@ -8526,7 +8526,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1102',
@@ -8539,7 +8539,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'ambiente alquilado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1103',
@@ -8552,7 +8552,7 @@ export const bolivianOffices: Office[] = [
     phone: '6672698',
     description: 'Casa Judicial ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1104',
@@ -8565,7 +8565,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'ambiente alquilado',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1105',
@@ -8578,7 +8578,7 @@ export const bolivianOffices: Office[] = [
     phone: '6675423',
     description: 'casa alquilada',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1106',
@@ -8591,7 +8591,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1107',
@@ -8604,7 +8604,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1108',
@@ -8617,7 +8617,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1113',
@@ -8630,7 +8630,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1114',
@@ -8643,7 +8643,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1115',
@@ -8656,7 +8656,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1123',
@@ -8669,7 +8669,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1124',
@@ -8682,7 +8682,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1125',
@@ -8695,7 +8695,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1126',
@@ -8708,7 +8708,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1127',
@@ -8721,7 +8721,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1128',
@@ -8734,7 +8734,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1129',
@@ -8747,7 +8747,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1261',
@@ -8760,7 +8760,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1262',
@@ -8773,7 +8773,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1263',
@@ -8786,7 +8786,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1264',
@@ -8799,7 +8799,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1265',
@@ -8812,7 +8812,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1266',
@@ -8825,7 +8825,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1267',
@@ -8838,7 +8838,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1268',
@@ -8851,7 +8851,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1269',
@@ -8864,7 +8864,7 @@ export const bolivianOffices: Office[] = [
     description: 'Av. Uruguay Esq. Monseñor Rivero Tribunal Departamental de Justicia',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1270',
@@ -8877,7 +8877,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3119',
     description: 'Palacio de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1271',
@@ -8889,7 +8889,7 @@ export const bolivianOffices: Office[] = [
     longitude: -65.7522720000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1272',
@@ -8902,7 +8902,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3182',
     description: 'Palacio de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1281',
@@ -8915,7 +8915,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3128',
     description: 'Palacio de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1285',
@@ -8928,7 +8928,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3343',
     description: 'Palacio de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1286',
@@ -8941,7 +8941,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3143',
     description: 'Palacio de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1287',
@@ -8954,7 +8954,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3365454 int 3146',
     description: 'Palacio de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1302',
@@ -8967,7 +8967,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9232321',
     description: 'Casa Judicial de Warnes',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1306',
@@ -8980,7 +8980,7 @@ export const bolivianOffices: Office[] = [
     phone: '-63257379000000',
     description: 'Edificio Judicial Montero',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1307',
@@ -8993,7 +8993,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Edificio Judicial Montero',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1308',
@@ -9006,7 +9006,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9226500',
     description: 'Edificio Judicial Montero',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1309',
@@ -9019,7 +9019,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9226501',
     description: 'Edificio Judicial Montero',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1310',
@@ -9032,7 +9032,7 @@ export const bolivianOffices: Office[] = [
     description: 'Casa Judicial Agroambiental - Montero',
     address: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1319',
@@ -9045,7 +9045,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9226887',
     description: 'Edificio Judicial Montero',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1320',
@@ -9058,7 +9058,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9226888',
     description: 'Edificio Judicial Montero',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1321',
@@ -9071,7 +9071,7 @@ export const bolivianOffices: Office[] = [
     phone: '-63518565000000',
     description: 'Edificio Judicial de Camiri',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1322',
@@ -9084,7 +9084,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Edificio Judicial de Camiri',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1327',
@@ -9097,7 +9097,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9524671',
     description: 'Casa Judicial de Camiri',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1328',
@@ -9110,7 +9110,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9524736',
     description: 'Edificio Judicial de Camiri',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1329',
@@ -9123,7 +9123,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9422377 - 3-9422507',
     description: 'Casa Judicial de Vallegrande',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1331',
@@ -9136,7 +9136,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9422508',
     description: 'Casa Judicial de Vallegrande',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1332',
@@ -9149,7 +9149,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9242404',
     description: 'Casa Judicial Portachuelo',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1333',
@@ -9162,7 +9162,7 @@ export const bolivianOffices: Office[] = [
     phone: '-63394687000000',
     description: 'Casa Judicial Portachuelo',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1334',
@@ -9175,7 +9175,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9446107',
     description: 'Casa Judicial de Samaipata',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1335',
@@ -9188,7 +9188,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9446344',
     description: 'Casa Judicial de Samaipata',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1336',
@@ -9201,7 +9201,7 @@ export const bolivianOffices: Office[] = [
     phone: '-60962696000000',
     description: 'Casa Judicial de San Ignacio de Velasco',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1337',
@@ -9214,7 +9214,7 @@ export const bolivianOffices: Office[] = [
     phone: '-60962696000000',
     description: 'Casa Judicial de San Ignacio de Velasco',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1338',
@@ -9227,7 +9227,7 @@ export const bolivianOffices: Office[] = [
     phone: '3882444',
     description: 'Casa Judicial de Cotoca',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1339',
@@ -9240,7 +9240,7 @@ export const bolivianOffices: Office[] = [
     phone: '3882366',
     description: 'Casa Judicial de Cotoca',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1340',
@@ -9253,7 +9253,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9462224',
     description: 'Casa Judicial de Comarapa',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1341',
@@ -9266,7 +9266,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9462090',
     description: 'Casa Judicial de Comarapa',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1342',
@@ -9279,7 +9279,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9722200',
     description: 'Casa Judicial San Jose',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1343',
@@ -9292,7 +9292,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9722383',
     description: 'Casa Judicial San Jose',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1344',
@@ -9305,7 +9305,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Casa Judicial de Yapacani',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1345',
@@ -9318,7 +9318,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9336366',
     description: 'Casa Judicial de Yapacani',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1346',
@@ -9331,7 +9331,7 @@ export const bolivianOffices: Office[] = [
     phone: '72164276',
     description: 'Casa Judicial de Yapacani',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1348',
@@ -9344,7 +9344,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9762199',
     description: 'Casa Judicial de Puerto Suarez',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1349',
@@ -9357,7 +9357,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9736828',
     description: 'Casa Judicial de Puerto Suarez',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1352',
@@ -9370,7 +9370,7 @@ export const bolivianOffices: Office[] = [
     phone: '-62026690000000',
     description: 'Casa Judicial de Concepcion',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1353',
@@ -9383,7 +9383,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9643249',
     description: 'Casa Judicial de Concepcion',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1354',
@@ -9396,7 +9396,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9643180',
     description: 'Casa Judicial de Concepcion',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1355',
@@ -9409,7 +9409,7 @@ export const bolivianOffices: Office[] = [
     phone: '0',
     description: 'Lagunillas',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1356',
@@ -9422,7 +9422,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3277028',
     description: 'Casa Judicial del Torno',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1357',
@@ -9435,7 +9435,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9792146',
     description: 'Casa Judicial de San Matias',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1358',
@@ -9448,7 +9448,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9742321',
     description: 'Casa Judicial de Robore',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1359',
@@ -9461,7 +9461,7 @@ export const bolivianOffices: Office[] = [
     phone: '-63660953000000',
     description: 'Casa Judicial de Buena Vista',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1360',
@@ -9474,7 +9474,7 @@ export const bolivianOffices: Office[] = [
     phone: '-63660953000000',
     description: 'Casa Judicial de Buena Vista',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1361',
@@ -9487,7 +9487,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9658021',
     description: 'Casa Judicial de San Julian',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1362',
@@ -9500,7 +9500,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9667073',
     description: 'Casa Judicial de Guarayos',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1363',
@@ -9513,7 +9513,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9246278',
     description: 'Casa Judicial Minero',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1364',
@@ -9526,7 +9526,7 @@ export const bolivianOffices: Office[] = [
     phone: 'NO DISPONE',
     description: 'Casa Judicial de Cabezas',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1365',
@@ -9539,7 +9539,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3840449',
     description: 'Casa Judicial de la Guardia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1367',
@@ -9551,7 +9551,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1369',
@@ -9564,7 +9564,7 @@ export const bolivianOffices: Office[] = [
     phone: '67823353',
     description: 'Casa Judicial Lagunillas',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1370',
@@ -9577,7 +9577,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-3882610',
     description: 'Casa Judicial de Pailon',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1371',
@@ -9590,7 +9590,7 @@ export const bolivianOffices: Office[] = [
     phone: '3-9466009',
     description: 'Casa Judicial de Sipina',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1372',
@@ -9602,7 +9602,7 @@ export const bolivianOffices: Office[] = [
     address: "",
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1373',
@@ -9615,7 +9615,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6428',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1374',
@@ -9628,7 +9628,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6620',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1375',
@@ -9641,7 +9641,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6501',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1376',
@@ -9654,7 +9654,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6526',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1377',
@@ -9667,7 +9667,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6427',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1378',
@@ -9680,7 +9680,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6429',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1379',
@@ -9693,7 +9693,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6274',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1380',
@@ -9706,7 +9706,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6292',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1381',
@@ -9719,7 +9719,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6245',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1382',
@@ -9732,7 +9732,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6258',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1383',
@@ -9745,7 +9745,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6264',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1384',
@@ -9758,7 +9758,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6281',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1388',
@@ -9771,7 +9771,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6243',
     description: 'Tribunal Departamental de Justicia del Beni ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1389',
@@ -9784,7 +9784,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6250',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1390',
@@ -9797,7 +9797,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6251',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1391',
@@ -9810,7 +9810,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6609',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1392',
@@ -9823,7 +9823,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6477',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1415',
@@ -9836,7 +9836,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621743 Interno 6288',
     description: 'Tribunal Departamental de Justicia del Beni',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1443',
@@ -9849,7 +9849,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621747',
     description: 'Casa Judicial San Borja',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1445',
@@ -9862,7 +9862,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621749',
     description: 'Casa Judicial San Borja',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1446',
@@ -9875,7 +9875,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621750',
     description: 'Centro Integrado de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1447',
@@ -9888,7 +9888,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621751',
     description: 'Centro Integrado de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1448',
@@ -9901,7 +9901,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621752',
     description: 'Centro Integrado de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1449',
@@ -9914,7 +9914,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621753',
     description: 'Centro Integrado de Justicia',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1456',
@@ -9927,7 +9927,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621758',
     description: 'Casa de Judicial Guayaramerín',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1460',
@@ -9940,7 +9940,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621762',
     description: 'Casa de Judicial Guayaramerín',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1464',
@@ -9953,7 +9953,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621766',
     description: 'Casa de Judicial Guayaramerín',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1465',
@@ -9966,7 +9966,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621767',
     description: 'Casa Judicial San Ana del Yacuma',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1467',
@@ -9979,7 +9979,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621769',
     description: 'Casa Judicial San Ana del Yacuma',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1468',
@@ -9992,7 +9992,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621770',
     description: 'Casa Judicial Rurrenabaque',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1469',
@@ -10005,7 +10005,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621771',
     description: 'Casa Judicial Magdalena',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1470',
@@ -10018,7 +10018,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621772',
     description: 'Casa Judicial Reyes',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1471',
@@ -10031,7 +10031,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621773',
     description: 'Casa Judicial San Ignacio de Moxos',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1472',
@@ -10044,7 +10044,7 @@ export const bolivianOffices: Office[] = [
     phone: '(591-3) 4621774',
     description: 'Casa Judicial San Joaquin',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1473',
@@ -10057,7 +10057,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7137',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1474',
@@ -10070,7 +10070,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7138',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1475',
@@ -10083,7 +10083,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7141',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1476',
@@ -10096,7 +10096,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7144',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1477',
@@ -10109,7 +10109,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7162',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1478',
@@ -10122,7 +10122,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7166',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1479',
@@ -10135,7 +10135,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7170',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1480',
@@ -10148,7 +10148,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7191',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1481',
@@ -10161,7 +10161,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7196',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1482',
@@ -10174,7 +10174,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7113',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1483',
@@ -10187,7 +10187,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7185',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1484',
@@ -10200,7 +10200,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7187',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1485',
@@ -10213,7 +10213,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7189',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1486',
@@ -10226,7 +10226,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1487',
@@ -10239,7 +10239,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7146',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1488',
@@ -10252,7 +10252,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7148',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1489',
@@ -10265,7 +10265,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7150',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1490',
@@ -10278,7 +10278,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7152',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1491',
@@ -10291,7 +10291,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7172',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1492',
@@ -10304,7 +10304,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7174',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1493',
@@ -10317,7 +10317,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1494',
@@ -10330,7 +10330,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7176',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1495',
@@ -10343,7 +10343,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7179',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1496',
@@ -10356,7 +10356,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1497',
@@ -10369,7 +10369,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7183',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1498',
@@ -10382,7 +10382,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7153',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1499',
@@ -10395,7 +10395,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7155',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1500',
@@ -10408,7 +10408,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7197',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1501',
@@ -10421,7 +10421,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7197',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1502',
@@ -10434,7 +10434,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7100',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1503',
@@ -10447,7 +10447,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1504',
@@ -10460,7 +10460,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1505',
@@ -10473,7 +10473,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7102',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1506',
@@ -10486,7 +10486,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7109',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1507',
@@ -10499,7 +10499,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7105',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1508',
@@ -10512,7 +10512,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1509',
@@ -10525,7 +10525,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7111',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1510',
@@ -10538,7 +10538,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7112',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1511',
@@ -10551,7 +10551,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7117',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1512',
@@ -10564,7 +10564,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7115',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1513',
@@ -10577,7 +10577,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7120',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1514',
@@ -10590,7 +10590,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7123',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1515',
@@ -10603,7 +10603,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7131',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1516',
@@ -10616,7 +10616,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7121',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1517',
@@ -10629,7 +10629,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7132',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1518',
@@ -10642,7 +10642,7 @@ export const bolivianOffices: Office[] = [
     description: 'Tribunal Departamental de Justicia ',
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1519',
@@ -10655,7 +10655,7 @@ export const bolivianOffices: Office[] = [
     phone: '8422330 int 7135',
     description: 'Tribunal Departamental de Justicia ',
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1521',
@@ -10667,7 +10667,7 @@ export const bolivianOffices: Office[] = [
     longitude: -67.5572540000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1522',
@@ -10679,7 +10679,7 @@ export const bolivianOffices: Office[] = [
     longitude: -68.6883620000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   },
   {
     id: '1523',
@@ -10691,15 +10691,15 @@ export const bolivianOffices: Office[] = [
     longitude: -67.2489957000000,
     phone: "",
     services: [],
-    type: "sucursal"
+    type: "Dependencia"
   }
 ];
 
 export const officeTypes = {
-  oficina_central: 'Oficina Central',
-  sucursal: 'Sucursal',
-  agencia: 'Agencia',
-  punto_atencion: 'Punto de Atención'
+  // oficina_central: 'Oficina Central',
+  Dependencia: 'Dependencia',
+  // agencia: 'Agencia',
+  // punto_atencion: 'Punto de Atención'
 };
 
 export const allServices = [

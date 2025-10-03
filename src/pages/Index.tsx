@@ -1,17 +1,19 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, Suspense, lazy } from 'react';
 import { Map, List, MapPin, Navigation, Building2, Star, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import { Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { LocationPermission } from '@/components/LocationPermission';
-import { MapView } from '@/components/MapView';
 import { OfficeList } from '@/components/OfficeList';
 import { Office, bolivianOffices } from '@/data/offices';
-import { UserLocation, calculateDistance, formatDistance } from '@/utils/location';
+import { UserLocation, calculateDistance, formatDistance, getDirectionsUrl } from '@/utils/location';
 import { getFavoriteOffices } from '@/utils/favorites';
+
+const MapView = lazy(() => import('@/components/MapView').then(module => ({ default: module.MapView })));
 
 const Index = () => {
   const [userLocation, setUserLocation] = useState<UserLocation | undefined>();
@@ -92,6 +94,25 @@ const Index = () => {
     setActiveTab('map');
   };
 
+  const handleGetDirections = (e: React.MouseEvent, office: Office) => {
+    e.stopPropagation(); // Evita que se active el onClick del div padre
+    if (userLocation) {
+      const url = getDirectionsUrl(
+        userLocation.latitude,
+        userLocation.longitude,
+        office.latitude,
+        office.longitude,
+        office.name
+      );
+      window.open(url, '_blank');
+    } else {
+      toast({
+        title: "Ubicación no disponible",
+        description: "Necesitamos tu ubicación para proporcionar direcciones",
+        variant: "destructive"
+      });
+    }
+  };
   // Si no se ha preguntado por la ubicación, mostrar el componente de permisos
   if (!locationPermissionAsked) {
     return (
@@ -200,17 +221,28 @@ const Index = () => {
                 {nearbyOffices.map(office => (
                   <div
                     key={office.id}
-                    className="p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
+                    className="p-3 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors flex flex-col justify-between"
                     onClick={() => handleOfficeSelect(office)}
                   >
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="font-medium text-sm">{office.name}</h3>
-                      <Badge variant="outline" className="text-xs">
-                        {formatDistance(office.distance)}
-                      </Badge>
+                    <div>
+                      <div className="flex justify-between items-start mb-2">
+                        <h3 className="font-medium text-sm pr-2">{office.name}</h3>
+                        <Badge variant="outline" className="text-xs flex-shrink-0">
+                          {formatDistance(office.distance)}
+                        </Badge>
+                      </div>
+                      <p className="text-xs text-gray-600 mb-1">{office.address}</p>
+                      <p className="text-xs text-gray-500">{office.city}</p>
                     </div>
-                    <p className="text-xs text-gray-600 mb-1">{office.address}</p>
-                    <p className="text-xs text-gray-500">{office.city}</p>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="w-full justify-start p-1 h-auto mt-2 text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                      onClick={(e) => handleGetDirections(e, office)}
+                    >
+                      <Navigation className="h-3 w-3 mr-1.5" />
+                      <span className="text-xs">Obtener direcciones</span>
+                    </Button>
                   </div>
                 ))}
               </div>
@@ -227,20 +259,26 @@ const Index = () => {
             </TabsTrigger>
             <TabsTrigger value="list" className="flex items-center space-x-2">
               <List className="h-4 w-4" />
-              <span>Lista</span>
+              <span>Lista de Oficinas/Juzgados</span>
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="map" className="space-y-4">
             <Card>
               <CardContent className="p-0">
-                <div className="h-[600px] w-full">
-                  <MapView
-                    offices={bolivianOffices}
-                    userLocation={userLocation}
-                    selectedOffice={selectedOffice}
-                    onOfficeSelect={handleOfficeSelect}
-                  />
+                <div className="h-[600px] w-full relative">
+                  <Suspense fallback={
+                    <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+                      <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
+                    </div>
+                  }>
+                    <MapView
+                      offices={bolivianOffices}
+                      userLocation={userLocation}
+                      selectedOffice={selectedOffice}
+                      onOfficeSelect={handleOfficeSelect}
+                    />
+                  </Suspense>
                 </div>
               </CardContent>
             </Card>

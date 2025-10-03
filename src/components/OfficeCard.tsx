@@ -98,7 +98,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({
     switch (type) {
       case 'oficina_central':
         return 'bg-blue-100 text-blue-800 border-blue-200';
-      case 'sucursal':
+      case 'Dependencia':
         return 'bg-green-100 text-green-800 border-green-200';
       case 'agencia':
         return 'bg-orange-100 text-orange-800 border-orange-200';
@@ -113,8 +113,8 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({
     switch (type) {
       case 'oficina_central':
         return 'Oficina Central';
-      case 'sucursal':
-        return 'Sucursal';
+      case 'Dependencia':
+        return 'Dependencia';
       case 'agencia':
         return 'Agencia';
       case 'punto_atencion':

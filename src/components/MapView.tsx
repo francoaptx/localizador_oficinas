@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap, LayersControl } from 'react-leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { Icon, LatLngBounds } from 'leaflet';
 import { MapPin, Navigation, Phone, Star } from 'lucide-react';
@@ -41,7 +41,7 @@ const createCustomIcon = (type: string, isSelected: boolean = false) => {
 
   const colors = {
     oficina_central: '#3b82f6',
-    sucursal: '#10b981',
+    Dependencia: '#10b981',
     agencia: '#f59e0b',
     punto_atencion: '#8b5cf6'
   };
@@ -187,8 +187,8 @@ export const MapView: React.FC<MapViewProps> = ({
     switch (type) {
       case 'oficina_central':
         return 'Oficina Central';
-      case 'sucursal':
-        return 'Sucursal';
+      case 'Dependencia':
+        return 'Dependencia';
       case 'agencia':
         return 'Agencia';
       case 'punto_atencion':
@@ -234,11 +234,28 @@ export const MapView: React.FC<MapViewProps> = ({
         style={{ height: '100%', width: '100%' }}
         className="rounded-lg"
       >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        
+        <LayersControl position="topright">
+          <LayersControl.BaseLayer checked name="Estándar">
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+          </LayersControl.BaseLayer>
+          <LayersControl.BaseLayer name="Relieve">
+            <TileLayer
+              attribution='Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+            />
+            </LayersControl.BaseLayer>
+          <LayersControl.BaseLayer name="Satélite">
+            <TileLayer
+              attribution='Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+              maxZoom={20}
+            />
+          </LayersControl.BaseLayer>
+        </LayersControl>
+
         <MapController
           offices={offices}
           userLocation={userLocation}

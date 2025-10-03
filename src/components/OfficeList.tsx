@@ -15,7 +15,7 @@ interface OfficeListProps {
 const officeTypes = [
   { value: 'all', label: 'Todos los Tipos' },
   { value: 'oficina_central', label: 'Oficina Central' },
-  { value: 'sucursal', label: 'Sucursal' },
+  { value: 'Dependencia', label: 'Dependencia' },
   { value: 'agencia', label: 'Agencia' },
   { value: 'punto_atencion', label: 'Punto de Atención' },
 ];
