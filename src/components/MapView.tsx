@@ -29,14 +29,24 @@ const MarkerIconSvg: React.FC<{ color: string }> = ({ color }) => (
 
 // Iconos personalizados para diferentes tipos de oficinas
 const createCustomIcon = (type: string, isSelected: boolean = false) => {
+  if (isSelected) {
+    const iconMarkup = renderToStaticMarkup(<MarkerIconSvg color="#ff0000ff" />); // Un color oscuro y neutro para resaltar
+    return new Icon({
+      iconUrl: `data:image/svg+xml;base64,${btoa(iconMarkup)}`,
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+    });
+  }
+
   const colors = {
-    oficina_central: isSelected ? '#1e40af' : '#3b82f6',
-    sucursal: isSelected ? '#059669' : '#10b981',
-    agencia: isSelected ? '#d97706' : '#f59e0b',
-    punto_atencion: isSelected ? '#7c3aed' : '#8b5cf6'
+    oficina_central: '#3b82f6',
+    sucursal: '#10b981',
+    agencia: '#f59e0b',
+    punto_atencion: '#8b5cf6'
   };
 
-  const color = colors[type as keyof typeof colors] || '#6b7280';
+  const color = colors[type as keyof typeof colors] || '#6b7280'; // Color por defecto
   
   const iconMarkup = renderToStaticMarkup(<MarkerIconSvg color={color} />);
   return new Icon({
@@ -258,6 +268,7 @@ export const MapView: React.FC<MapViewProps> = ({
             key={office.id}
             position={[office.latitude, office.longitude]}
             icon={createCustomIcon(office.type, selectedOffice?.id === office.id)}
+            zIndexOffset={selectedOffice?.id === office.id ? 1000 : 0}
             eventHandlers={{
               click: () => onOfficeSelect?.(office)
             }}

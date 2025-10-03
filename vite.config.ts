@@ -207,9 +207,10 @@ function cdnPrefixImages(): Plugin {
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
+    root: __dirname,
     server: {
       host: "::",
-      port: 8080,
+      port: 3080,
     },
     plugins: [
       react(),
