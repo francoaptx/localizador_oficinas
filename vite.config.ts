@@ -234,6 +234,7 @@ export default defineConfig(({ mode }) => {
       componentTagger(),
       cdnPrefixImages(),
     ].filter(Boolean),
+    base: '/',
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
