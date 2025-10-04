@@ -15,9 +15,7 @@ import { getFavoriteOffices } from '@/utils/favorites';
 
 const MapView = lazy(() => import('@/components/MapView').then(module => ({ default: module.MapView })));
 
-const Index = () => {
-  const [userLocation, setUserLocation] = useState<UserLocation | undefined>();
-  const [locationPermissionAsked, setLocationPermissionAsked] = useState(false);
+const IndexPageContent = ({ userLocation }: { userLocation?: UserLocation }) => {
   const [selectedOffice, setSelectedOffice] = useState<Office | undefined>();
   const [activeTab, setActiveTab] = useState<'map' | 'list'>('map');
   const { toast } = useToast();
@@ -64,24 +62,6 @@ const Index = () => {
       .slice(0, 3);
   }, [userLocation]);
 
-  const handleLocationGranted = (location: UserLocation) => {
-    setUserLocation(location);
-    setLocationPermissionAsked(true);
-    toast({
-      title: "Ubicación obtenida",
-      description: "Ahora puedes ver las oficinas más cercanas a ti",
-    });
-  };
-
-  const handleLocationDenied = () => {
-    setLocationPermissionAsked(true);
-    toast({
-      title: "Ubicación no disponible",
-      description: "Puedes buscar oficinas manualmente",
-      variant: "destructive"
-    });
-  };
-
   const handleOfficeSelect = (office: Office) => {
     setSelectedOffice(office);
     if (activeTab !== 'map') {
@@ -113,17 +93,6 @@ const Index = () => {
       });
     }
   };
-  // Si no se ha preguntado por la ubicación, mostrar el componente de permisos
-  if (!locationPermissionAsked) {
-    return (
-      <div className="min-h-screen bg-gray-50">
-        <LocationPermission
-          onLocationGranted={handleLocationGranted}
-          onLocationDenied={handleLocationDenied}
-        />
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -294,6 +263,41 @@ const Index = () => {
       </div>
     </div>
   );
+};
+
+const Index = () => {
+  const [locationPermissionAsked, setLocationPermissionAsked] = useState(false);
+  const [initialLocation, setInitialLocation] = useState<UserLocation | undefined>();
+  const { toast } = useToast();
+
+  useEffect(() => {
+    // Intenta obtener la ubicación al cargar la página
+    // El componente LocationPermission se encargará de la UI si es necesario
+  }, []);
+
+  const handleLocationGranted = (location: UserLocation) => {
+    setInitialLocation(location);
+    setLocationPermissionAsked(true);
+    toast({
+      title: "Ubicación obtenida",
+      description: "Ahora puedes ver las oficinas más cercanas a ti",
+    });
+  };
+
+  const handleLocationDenied = () => {
+    setLocationPermissionAsked(true);
+    toast({
+      title: "Ubicación no disponible",
+      description: "Puedes buscar oficinas manualmente.",
+      variant: "destructive"
+    });
+  };
+
+  if (!locationPermissionAsked) {
+    return <LocationPermission onLocationGranted={handleLocationGranted} onLocationDenied={handleLocationDenied} />;
+  }
+
+  return <IndexPageContent userLocation={initialLocation} />;
 };
 
 export default Index;

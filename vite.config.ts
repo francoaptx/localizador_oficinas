@@ -212,36 +212,17 @@ export default defineConfig(({ mode }) => {
       host: "::",
       port: 3080,
     },
-    build: {
-      rollupOptions: {
-        output: {
-          manualChunks(id) {
-            // Agrupa las librerías de Leaflet en un chunk separado.
-            if (id.includes('node_modules/leaflet') || id.includes('node_modules/react-leaflet')) {
-              return 'leaflet-vendor';
-            }
-            // Agrupa las librerías de React en un chunk separado.
-            if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/react-router-dom')) {
-              return 'react-vendor';
-            }
-          },
-        },
-      },
-    },
+    build: {},
     plugins: [
       react(),
       mode === 'development' &&
       componentTagger(),
-      cdnPrefixImages(),
+      // cdnPrefixImages(), // Deshabilitado temporalmente para corregir el build
     ].filter(Boolean),
     base: '/',
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
-        // Proxy react-router-dom to our wrapper
-        "react-router-dom": path.resolve(__dirname, "./src/lib/react-router-dom-proxy.tsx"),
-        // Original react-router-dom under a different name
-        "react-router-dom-original": "react-router-dom",
       },
     },
     define: {
