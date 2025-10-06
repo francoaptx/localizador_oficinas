@@ -241,13 +241,24 @@ export const MapView: React.FC<MapViewProps> = ({
 
   return (
     <div className="absolute inset-0 z-0 h-full w-full">
+      {/* Logo de la Institución (movido fuera del MapContainer) */}
+      <div className="absolute top-16 right-2 z-[1001] lg:top-8 lg:right-2 bg-white p-1 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+        <a>
+          <img 
+            src="/logotipo.jpg" 
+            alt="Logo Institución" 
+            className="w-16 h-16 md:w-24 md:h-24 object-contain"
+          />
+        </a>
+      </div>
+
       <MapContainer
         center={defaultCenter}
         zoom={6}
         style={{ height: '100%', width: '100%' }}
         className="rounded-lg"
       >
-        <LayersControl position="topright">
+        <LayersControl position="topleft">
           <LayersControl.BaseLayer checked name="Estándar">
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

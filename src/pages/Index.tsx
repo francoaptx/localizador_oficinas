@@ -43,6 +43,12 @@ const IndexPageContent = ({ userLocation }: { userLocation?: UserLocation }) => 
     setIsPanelOpen(true); // Abre el panel al seleccionar una oficina
   };
 
+  const handleSuggestionSelect = (office: Office) => {
+    setSearchTerm(office.name);
+    setSelectedOffice(office);
+    setIsPanelOpen(true);
+  };
+
   const clearFilters = () => {
     setSearchTerm('');
     setSelectedDepartment('Todos');
@@ -57,7 +63,7 @@ const IndexPageContent = ({ userLocation }: { userLocation?: UserLocation }) => 
     let offices = bolivianOffices;
 
     // Filtrar por término de búsqueda
-    if (searchTerm) {
+  if (searchTerm) {
       const lowercasedTerm = searchTerm.toLowerCase();
       offices = offices.filter(office =>
         office.name.toLowerCase().includes(lowercasedTerm) ||
@@ -98,6 +104,50 @@ const IndexPageContent = ({ userLocation }: { userLocation?: UserLocation }) => 
     return officesWithDistance;
   }, [searchTerm, userLocation, selectedDepartment, selectedType]);
 
+  const searchSuggestions = useMemo(() => {
+    if (!searchTerm || searchTerm.length < 2) {
+      return [];
+    }
+
+    let suggestionPool = bolivianOffices;
+
+    // Pre-filtrar por departamento si no es 'Todos'
+    if (selectedDepartment !== 'Todos') {
+      suggestionPool = suggestionPool.filter(office => office.department === selectedDepartment);
+    }
+
+    const lowercasedTerm = searchTerm.toLowerCase();
+    return suggestionPool
+      .filter(office => office.name.toLowerCase().includes(lowercasedTerm))
+      .slice(0, 5); // Limitar a 5 sugerencias
+  }, [searchTerm, selectedDepartment]);
+
+  const nearbyOfficesForPanel = useMemo(() => {
+    // Si hay una oficina seleccionada, muestra las oficinas más cercanas a ELLA.
+    if (selectedOffice) {
+      return bolivianOffices
+        .filter(o => o.id !== selectedOffice.id) // Excluir la oficina seleccionada
+        .map(office => ({
+          ...office,
+          distance: calculateDistance(
+            selectedOffice.latitude,
+            selectedOffice.longitude,
+            office.latitude,
+            office.longitude
+          )
+        }))
+        .sort((a, b) => a.distance - b.distance)
+        .slice(0, 20); // Mostrar las 20 más cercanas a la oficina seleccionada
+    }
+
+    // Si no hay oficina seleccionada, muestra las más cercanas al USUARIO.
+    return filteredOffices
+      .filter(office => office.distance !== null) // Asegurarse de que tengan distancia
+      .sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity))
+      .slice(0, 20);
+  }, [filteredOffices, userLocation, selectedOffice]);
+
+
   // Calcula el padding para el mapa basado en la altura del panel.
   // 40vh es el primer snap point del panel. Añadimos un poco más para el header del panel.
   const mapPaddingBottom = useMemo(() => {
@@ -126,9 +176,9 @@ const IndexPageContent = ({ userLocation }: { userLocation?: UserLocation }) => 
         <SearchBar
           searchTerm={searchTerm} setSearchTerm={setSearchTerm}
           selectedDepartment={selectedDepartment} setSelectedDepartment={setSelectedDepartment}
-          selectedType={selectedType} setSelectedType={setSelectedType}
           departments={departments}
-          officeTypes={officeTypes}
+          suggestions={searchSuggestions}
+          onSuggestionSelect={handleSuggestionSelect}
           clearFilters={clearFilters}
         />
       </div>
@@ -136,8 +186,7 @@ const IndexPageContent = ({ userLocation }: { userLocation?: UserLocation }) => 
       {/* Panel inferior con la lista de oficinas */}
       <OfficePanel
         open={isPanelOpen}
-        onDismiss={() => setIsPanelOpen(false)}
-        offices={filteredOffices}
+        offices={nearbyOfficesForPanel}
         userLocation={userLocation}
         onOfficeSelect={handleOfficeSelect}
         selectedOffice={selectedOffice}
@@ -169,6 +218,7 @@ const Index = () => {
       variant: "destructive"
     });
   };
+  
 
   if (!locationPermissionAsked) {
     return (
