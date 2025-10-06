@@ -1,176 +1,81 @@
-import React, { useState, useMemo } from 'react';
-import { Search, Filter, X } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import React from 'react';
+import { MapPin, Navigation } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { OfficeCard } from '@/components/OfficeCard';
-import { Office, bolivianOffices } from '@/data/offices';
-import { UserLocation, calculateDistance } from '@/utils/location';
+import { Badge } from '@/components/ui/badge';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Separator } from '@/components/ui/separator';
+import { Office } from '@/data/offices';
+import { UserLocation, formatDistance, getDirectionsUrl } from '@/utils/location';
+import { useToast } from '@/hooks/use-toast';
 
 interface OfficeListProps {
+  offices: (Office & { distance: number | null })[];
   userLocation?: UserLocation;
-  onViewOnMap: (office: Office) => void;
+  onOfficeSelect: (office: Office) => void;
+  selectedOffice?: Office;
 }
 
-const officeTypes = [
-  { value: 'all', label: 'Todos los Tipos' },
-  { value: 'oficina_central', label: 'Oficina Central' },
-  { value: 'Dependencia', label: 'Dependencia' },
-  { value: 'agencia', label: 'Agencia' },
-  { value: 'punto_atencion', label: 'Punto de Atención' },
-];
+export const OfficeList: React.FC<OfficeListProps> = ({ offices, userLocation, onOfficeSelect, selectedOffice }) => {
+  const { toast } = useToast();
 
-const departments = [
-  'Todos', 'La Paz', 'Cochabamba', 'Santa Cruz', 'Oruro', 'Potosí', 
-  'Chuquisaca', 'Tarija', 'Beni', 'Pando'
-];
-
-export const OfficeList: React.FC<OfficeListProps> = ({ userLocation, onViewOnMap }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedType, setSelectedType] = useState('all');
-  const [selectedDepartment, setSelectedDepartment] = useState('Todos');
-
-  const filteredAndSortedOffices = useMemo(() => {
-    let offices = bolivianOffices;
-
-    // Filtrar por término de búsqueda
-    if (searchTerm) {
-      const lowercasedTerm = searchTerm.toLowerCase();
-      offices = offices.filter(office =>
-        office.name.toLowerCase().includes(lowercasedTerm) ||
-        office.address.toLowerCase().includes(lowercasedTerm) ||
-        office.city.toLowerCase().includes(lowercasedTerm)
-      );
-    }
-
-    // Filtrar por tipo
-    if (selectedType !== 'all') {
-      offices = offices.filter(office => office.type === selectedType);
-    }
-
-    // Filtrar por departamento
-    if (selectedDepartment !== 'Todos') {
-      offices = offices.filter(office => office.department === selectedDepartment);
-    }
-
-    // Calcular distancia y ordenar
-    const officesWithDistance = offices.map(office => ({
-      ...office,
-      distance: userLocation
-        ? calculateDistance(
-            userLocation.latitude,
-            userLocation.longitude,
-            office.latitude,
-            office.longitude
-          )
-        : null,
-    }));
-
-    // Ordenar por distancia si la ubicación está disponible, si no, alfabéticamente
+  const handleGetDirections = (e: React.MouseEvent, office: Office) => {
+    e.stopPropagation();
     if (userLocation) {
-      officesWithDistance.sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity));
+      const url = getDirectionsUrl(userLocation.latitude, userLocation.longitude, office.latitude, office.longitude, office.name);
+      window.open(url, '_blank');
     } else {
-      officesWithDistance.sort((a, b) => a.name.localeCompare(b.name));
+      toast({
+        title: "Ubicación no disponible",
+        description: "Necesitamos tu ubicación para proporcionar direcciones",
+        variant: "destructive"
+      });
     }
-
-    return officesWithDistance;
-  }, [searchTerm, selectedType, selectedDepartment, userLocation]);
-
-  const clearFilters = () => {
-    setSearchTerm('');
-    setSelectedType('all');
-    setSelectedDepartment('Todos');
   };
 
-  const hasActiveFilters = searchTerm || selectedType !== 'all' || selectedDepartment !== 'Todos';
-
   return (
-    <div className="space-y-6">
-      {/* Barra de Búsqueda y Filtros */}
-      <div className="p-4 bg-white rounded-lg shadow-sm border space-y-4">
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-          <Input
-            type="text"
-            placeholder="Buscar por nombre, ciudad o dirección..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="pl-10"
-          />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* Filtro por Tipo */}
-          <Select value={selectedType} onValueChange={setSelectedType}>
-            <SelectTrigger>
-              <SelectValue placeholder="Filtrar por tipo" />
-            </SelectTrigger>
-            <SelectContent>
-              {officeTypes.map(type => (
-                <SelectItem key={type.value} value={type.value}>
-                  {type.label}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-
-          {/* Filtro por Departamento */}
-          <Select value={selectedDepartment} onValueChange={setSelectedDepartment}>
-            <SelectTrigger>
-              <SelectValue placeholder="Filtrar por departamento" />
-            </SelectTrigger>
-            <SelectContent>
-              {departments.map(dept => (
-                <SelectItem key={dept} value={dept}>
-                  {dept}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-
-          {/* Botón de Limpiar Filtros */}
-          <Button 
-            variant="outline" 
-            onClick={clearFilters} 
-            disabled={!hasActiveFilters}
-            className="w-full"
-          >
-            <X className="h-4 w-4 mr-2" />
-            Limpiar Filtros
-          </Button>
-        </div>
-      </div>
-
-      {/* Lista de Oficinas */}
-      {filteredAndSortedOffices.length > 0 ? (
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-          {filteredAndSortedOffices.map(office => (
-            <OfficeCard
-              key={office.id}
-              office={office}
-              userLocation={userLocation}
-              onViewOnMap={onViewOnMap}
-            />
-          ))}
-        </div>
+    <div className="w-full">
+      {offices.length > 0 ? (
+        <ScrollArea className="h-full w-full">
+          <div className="space-y-2 pr-4 pb-4">
+            {offices.map((office, index) => (
+              <React.Fragment key={office.id}>
+                <div
+                  onClick={() => onOfficeSelect(office)}
+                  className={`p-3 rounded-lg cursor-pointer transition-colors ${selectedOffice?.id === office.id ? 'bg-blue-50 border border-blue-200' : 'hover:bg-gray-50'}`}
+                >
+                  <div className="flex justify-between items-start">
+                    <div className="flex-grow">
+                      <h3 className="font-semibold text-sm text-gray-800">{office.name}</h3>
+                      <p className="text-xs text-gray-500 mt-1">{office.address}</p>
+                    </div>
+                    {office.distance !== null && (
+                      <Badge variant="outline" className="ml-4 flex-shrink-0">{formatDistance(office.distance)}</Badge>
+                    )}
+                  </div>
+                  <div className="flex items-center justify-between mt-3">
+                    <p className="text-xs text-gray-400">{office.city}, {office.department}</p>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="h-auto p-1 text-blue-600 hover:text-blue-700"
+                      onClick={(e) => handleGetDirections(e, office)}
+                    >
+                      <Navigation className="h-4 w-4 mr-1.5" />
+                      <span className="text-xs">Direcciones</span>
+                    </Button>
+                  </div>
+                </div>
+                {index < offices.length - 1 && <Separator />}
+              </React.Fragment>
+            ))}
+          </div>
+        </ScrollArea>
       ) : (
-        <div className="text-center py-16 px-6 bg-white rounded-lg shadow-sm border">
-          <Filter className="mx-auto h-12 w-12 text-gray-400" />
-          <h3 className="mt-4 text-lg font-semibold text-gray-900">
-            No se encontraron oficinas
-          </h3>
-          <p className="mt-2 text-sm text-gray-500">
-            Intenta ajustar tus filtros de búsqueda o revisa si hay errores de escritura.
+        <div className="text-center py-8">
+          <MapPin className="mx-auto h-10 w-10 text-gray-400" />
+          <p className="mt-4 text-sm text-gray-600">
+            No se encontraron oficinas. Intenta ampliar tu búsqueda.
           </p>
-          {hasActiveFilters && (
-            <Button
-              variant="ghost"
-              onClick={clearFilters}
-              className="mt-6"
-            >
-              <X className="mr-2 h-4 w-4" />
-              Limpiar todos los filtros
-            </Button>
-          )}
         </div>
       )}
     </div>

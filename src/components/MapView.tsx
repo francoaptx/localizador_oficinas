@@ -21,9 +21,9 @@ Icon.Default.mergeOptions({
 
 // Componente React para el icono SVG del marcador
 const MarkerIconSvg: React.FC<{ color: string }> = ({ color }) => (
-  <svg width="25" height="41" viewBox="0 0 25 41" xmlns="http://www.w3.org/2000/svg">
-    <path d={`M12.5 0C5.6 0 0 5.6 0 12.5c0 12.5 12.5 28.5 12.5 28.5s12.5-16 12.5-28.5C25 5.6 19.4 0 12.5 0z`} fill={color} />
-    <circle cx="12.5" cy="12.5" r="6" fill="white" />
+  <svg width="12" height="25" viewBox="0 0 12 25" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 0C2.7 0 0 2.7 0 6c0 6 6 13.7 6 13.7S12 12 12 6C12 2.7 9.3 0 6 0z" fill={color} />
+    <circle cx="6" cy="6" r="2.9" fill="white" />
   </svg>
 );
 
@@ -73,6 +73,7 @@ interface MapViewProps {
   userLocation?: UserLocation;
   selectedOffice?: Office;
   onOfficeSelect?: (office: Office) => void;
+  bottomPadding?: number;
 }
 
 // Componente para ajustar la vista del mapa
@@ -80,12 +81,19 @@ const MapController: React.FC<{
   offices: Office[];
   userLocation?: UserLocation;
   selectedOffice?: Office;
-}> = ({ offices, userLocation, selectedOffice }) => {
+  bottomPadding?: number;
+}> = ({ offices, userLocation, selectedOffice, bottomPadding = 0 }) => {
   const map = useMap();
 
   useEffect(() => {
+    // Centro por defecto en Bolivia
+    const defaultCenter: [number, number] = [-16.5, -65.5];
+
     if (selectedOffice) {
-      map.setView([selectedOffice.latitude, selectedOffice.longitude], 15);
+      map.flyTo([selectedOffice.latitude, selectedOffice.longitude], 15, {
+        paddingBottomRight: [0, bottomPadding]
+      });
+
     } else if (offices.length > 0) {
       const bounds = new LatLngBounds([]);
       
@@ -98,11 +106,15 @@ const MapController: React.FC<{
       }
       
       if (bounds.isValid()) {
-        map.fitBounds(bounds, { padding: [20, 20] });
+        map.fitBounds(bounds, { padding: [50, 50], paddingBottomRight: [0, bottomPadding] });
+      } else {
+        map.setView(defaultCenter, 5); // Vista por defecto si los bounds no son válidos
       }
+    } else {
+      map.setView(defaultCenter, 5); // Vista por defecto si no hay oficinas
     }
-  }, [map, offices, userLocation, selectedOffice]);
-
+  }, [map, offices, userLocation, selectedOffice, bottomPadding]);
+  
   return null;
 };
 
@@ -110,7 +122,8 @@ export const MapView: React.FC<MapViewProps> = ({
   offices,
   userLocation,
   selectedOffice,
-  onOfficeSelect
+  onOfficeSelect,
+  bottomPadding = 0
 }) => {
   const { toast } = useToast();
   const [favoriteStates, setFavoriteStates] = useState<{ [key: string]: boolean }>({});
@@ -227,7 +240,7 @@ export const MapView: React.FC<MapViewProps> = ({
   const defaultCenter: [number, number] = [-16.5000, -68.1193]; // La Paz
 
   return (
-    <div className="h-full w-full">
+    <div className="absolute inset-0 z-0 h-full w-full">
       <MapContainer
         center={defaultCenter}
         zoom={6}
@@ -260,6 +273,7 @@ export const MapView: React.FC<MapViewProps> = ({
           offices={offices}
           userLocation={userLocation}
           selectedOffice={selectedOffice}
+          bottomPadding={bottomPadding} // Pasamos el padding aquí
         />
 
         {/* Marcador de ubicación del usuario */}
