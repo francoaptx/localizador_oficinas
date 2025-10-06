@@ -26,7 +26,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
   return (
-    <Card className="shadow-lg my-4 mx-9 md:mx-4 lg:mx-0 z-[1000]">
+    <Card className="shadow-lg my-0 mx-9 md:mx-4 lg:mx-0 z-[1000]">
       <CardContent className="p-1">
         <div className="flex items-center space-x-2">
           <div className="flex-grow">
