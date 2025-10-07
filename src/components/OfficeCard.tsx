@@ -67,7 +67,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({
     } else {
       toast({
         title: "Ubicación no disponible",
-        description: "Necesitamos tu ubicación para proporcionar direcciones",
+        description: "Necesitamos tu ubicación para proporcionar Indicaciones",
         variant: "destructive"
       });
     }
@@ -253,7 +253,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({
             className="flex-1 min-w-0"
           >
             <Navigation className="h-4 w-4 mr-1" />
-            Direcciones
+            Indicaciones
           </Button>
           
           <Button

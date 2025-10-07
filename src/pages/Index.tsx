@@ -43,6 +43,13 @@ const IndexPageContent = ({ userLocation }: { userLocation?: UserLocation }) => 
     setIsPanelOpen(true); // Abre el panel al seleccionar una oficina
   };
 
+  // Manejador para el cambio de departamento que reinicia otros filtros
+  const handleDepartmentChange = (newDepartment: string) => {
+    setSelectedDepartment(newDepartment);
+    setSearchTerm('');
+    setSelectedOffice(undefined);
+  };
+
   const handleSuggestionSelect = (office: Office) => {
     setSearchTerm(office.name);
     setSelectedOffice(office);
@@ -175,7 +182,7 @@ const IndexPageContent = ({ userLocation }: { userLocation?: UserLocation }) => 
       <div className="absolute top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-[1000]">
         <SearchBar
           searchTerm={searchTerm} setSearchTerm={setSearchTerm}
-          selectedDepartment={selectedDepartment} setSelectedDepartment={setSelectedDepartment}
+          selectedDepartment={selectedDepartment} setSelectedDepartment={handleDepartmentChange}
           departments={departments}
           suggestions={searchSuggestions}
           onSuggestionSelect={handleSuggestionSelect}

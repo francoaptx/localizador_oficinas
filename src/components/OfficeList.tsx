@@ -26,7 +26,7 @@ export const OfficeList: React.FC<OfficeListProps> = ({ offices, userLocation, o
     } else {
       toast({
         title: "Ubicación no disponible",
-        description: "Necesitamos tu ubicación para proporcionar direcciones",
+        description: "Necesitamos tu ubicación para proporcionar Indicaciones",
         variant: "destructive"
       });
     }
@@ -61,7 +61,7 @@ export const OfficeList: React.FC<OfficeListProps> = ({ offices, userLocation, o
                       onClick={(e) => handleGetDirections(e, office)}
                     >
                       <Navigation className="h-4 w-4 mr-1.5" />
-                      <span className="text-xs">Direcciones</span>
+                      <span className="text-xs">Indicaciones</span>
                     </Button>
                   </div>
                 </div>

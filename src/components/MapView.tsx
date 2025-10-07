@@ -9,6 +9,7 @@ import { useToast } from '@/hooks/use-toast';
 import { Office } from '@/data/offices';
 import { UserLocation, getDirectionsUrl, shareOfficeLocation } from '@/utils/location';
 import { isFavorite, addToFavorites, removeFromFavorites } from '@/utils/favorites';
+import logotipo from '/logotipo.jpg'; // Importar la imagen
 import 'leaflet/dist/leaflet.css';
 
 // Fix para los iconos de Leaflet
@@ -93,7 +94,7 @@ const MapController: React.FC<{
       map.flyTo([selectedOffice.latitude, selectedOffice.longitude], 15, {
         paddingBottomRight: [0, bottomPadding]
       });
-
+  
     } else if (offices.length > 0) {
       const bounds = new LatLngBounds([]);
       
@@ -106,7 +107,7 @@ const MapController: React.FC<{
       }
       
       if (bounds.isValid()) {
-        map.fitBounds(bounds, { padding: [50, 50], paddingBottomRight: [0, bottomPadding] });
+        map.fitBounds(bounds, { padding: [50, 50], paddingBottomRight: [0, bottomPadding], maxZoom: 15 });
       } else {
         map.setView(defaultCenter, 5); // Vista por defecto si los bounds no son válidos
       }
@@ -114,7 +115,7 @@ const MapController: React.FC<{
       map.setView(defaultCenter, 5); // Vista por defecto si no hay oficinas
     }
   }, [map, offices, userLocation, selectedOffice, bottomPadding]);
-  
+
   return null;
 };
 
@@ -169,7 +170,7 @@ export const MapView: React.FC<MapViewProps> = ({
     } else {
       toast({
         title: "Ubicación no disponible",
-        description: "Necesitamos tu ubicación para proporcionar direcciones",
+        description: "Necesitamos tu ubicación para proporcionar Indicaciones",
         variant: "destructive"
       });
     }
@@ -245,7 +246,7 @@ export const MapView: React.FC<MapViewProps> = ({
       <div className="absolute top-16 right-2 z-[1001] lg:top-8 lg:right-2 bg-white p-1 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
         <a>
           <img 
-            src="/logotipo.jpg" 
+            src={logotipo} 
             alt="Logo Institución" 
             className="w-16 h-16 md:w-24 md:h-24 object-contain"
           />
@@ -397,7 +398,7 @@ export const MapView: React.FC<MapViewProps> = ({
                     className="flex-1 text-xs h-8"
                   >
                     <Navigation className="h-3 w-3 mr-1" />
-                    Direcciones
+                    Indicaciones
                   </Button>
                   <Button
                     variant="outline"
